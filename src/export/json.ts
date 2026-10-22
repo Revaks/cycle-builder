@@ -20,6 +20,10 @@ export function downloadProjectJson(project: Project): void {
 }
 
 export async function readProjectJsonFile(file: File): Promise<ParseResult> {
-  const text = await file.text();
-  return parseProjectJson(text);
+  try {
+    const text = await file.text();
+    return parseProjectJson(text);
+  } catch {
+    return { ok: false, error: 'Не удалось прочитать файл' };
+  }
 }

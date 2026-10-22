@@ -215,21 +215,29 @@ export default function SettingsPage() {
           </span>
         </div>
 
+        {errors.length > 0 && (
+          <ul className="settings-error-list">
+            {errors.slice(0, 6).map((issue, index) => (
+              <li key={`${issue.code}-${index}`}>{issue.message}</li>
+            ))}
+          </ul>
+        )}
+
         <details className="metrics-details">
-          <summary>Таблица Фунтикова — 100 значений</summary>
+          <summary>Таблица Фунтикова — 101 значение</summary>
           <p className="muted">
-            Коэффициент для каждого целого процента от 1 до 100. Индекс 0 не используется.
+            Коэффициент для каждого целого процента от 0 до 100. Индекс 0 хранится для совместимости и в расчёте не используется.
           </p>
           <div className="funtikov-grid">
-            {project.metrics.funtikovTable.slice(1).map((value, index) => (
-              <div className="funtikov-row" key={index + 1}>
-                <span>{index + 1}%</span>
+            {project.metrics.funtikovTable.map((value, index) => (
+              <div className="funtikov-row" key={index}>
+                <span>{index}%</span>
                 <NumberInput
-                  label={`Коэффициент Фунтикова ${index + 1}%`}
+                  label={`Коэффициент Фунтикова ${index}%`}
                   value={value}
                   min={0}
                   step={0.01}
-                  onChange={(next) => updateFuntikov(index + 1, next)}
+                  onChange={(next) => updateFuntikov(index, next)}
                 />
               </div>
             ))}

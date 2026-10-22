@@ -938,6 +938,31 @@ small {
   margin-bottom: 0;
 }
 
+.week-summary-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.deload-toggle {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  padding: 5px 9px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.deload-toggle input {
+  accent-color: var(--accent);
+}
+
 .badge-warning {
   background: var(--warning-soft);
   color: var(--warning);
@@ -1750,3 +1775,36 @@ small {
 
 
 
+
+.mini-badge-error {
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-weight: 750;
+}
+
+.settings-error-list {
+  margin: 0 0 12px;
+  padding: 9px 12px 9px 28px;
+  border-radius: 9px;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-size: 0.78rem;
+}
+
+.settings-error-list li + li {
+  margin-top: 3px;
+}
+
+.file-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

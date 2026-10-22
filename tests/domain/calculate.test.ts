@@ -15,7 +15,7 @@ describe('calculateCycle', () => {
     expect(press.kpsh).toBe(48);
     expect(press.timeMinutes).toBeCloseTo(23.4, 10);
     expect(press.funtikov).toBeCloseTo(972.7, 10);
-    expect(press.avgWeight).toBeCloseTo(42.5, 10);
+    expect(press.avgWeight ?? 0).toBeCloseTo(42.5, 10);
     expect(press.relativeIntensity).toBeCloseTo(0.4722, 4);
   });
 
@@ -38,7 +38,51 @@ describe('calculateCycle', () => {
     expect(result.groups[0].weight).toBeNull();
     expect(result.tonnage).toBe(0);
     expect(result.kpsh).toBe(48);
+    expect(result.weightedKpsh).toBe(0);
+    expect(result.avgWeight).toBeNull();
     expect(result.timeMinutes).toBeCloseTo(23.4, 10);
+  });
+
+  it('исключает КПШ без 1ПМ из среднего веса дня и недели', () => {
+    const broken = createSeedProject();
+    broken.exercises[0].oneRM = null;
+    const week = calculateCycle(broken).weeks[0];
+    const day = week.days[0];
+    const validDayKpsh = day.entries
+      .filter((entry) => !entry.hasMissingOneRM)
+      .reduce((sum, entry) => sum + entry.kpsh, 0);
+    const validWeekKpsh = week.days
+      .flatMap((item) => item.entries)
+      .filter((entry) => !entry.hasMissingOneRM)
+      .reduce((sum, entry) => sum + entry.kpsh, 0);
+    expect(day.avgWeight ?? 0).toBeCloseTo(day.tonnage / validDayKpsh, 10);
+    expect(week.avgWeight ?? 0).toBeCloseTo(week.tonnage / validWeekKpsh, 10);
+  });
+
+  it('возвращает null среднего веса, если нет ни одного 1ПМ', () => {
+    const broken = createSeedProject();
+    broken.exercises.forEach((exercise) => (exercise.oneRM = null));
+    const result = calculateCycle(broken);
+    expect(result.avgWeight).toBeNull();
+    expect(result.weeks[0].avgWeight).toBeNull();
+    expect(result.weeks[0].days[0].avgWeight).toBeNull();
+  });
+
+  it('возвращает 0 времени для пустого дня', () => {
+    const empty = createSeedProject();
+    empty.weeks[0].days[0].entries = [];
+    const day = calculateCycle(empty).weeks[0].days[0];
+    expect(day.timeMinutes).toBe(0);
+    expect(day.tonnage).toBe(0);
+  });
+
+  it('возвращает 0 времени, если все факторы времени нулевые', () => {
+    const zeroTime = createSeedProject();
+    zeroTime.metrics.timeThresholds.forEach((threshold) => (threshold.factor = 0));
+    zeroTime.metrics.timeFallbackFactor = 0;
+    const day = calculateCycle(zeroTime).weeks[0].days[0];
+    expect(day.entries.length).toBeGreaterThan(0);
+    expect(day.timeMinutes).toBe(0);
   });
 
   it('считает упражнение с нулевым весом', () => {

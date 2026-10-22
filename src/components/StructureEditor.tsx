@@ -23,6 +23,12 @@ export default function StructureEditor({ weekId }: StructureEditorProps) {
   const [newDayName, setNewDayName] = useState('');
   const [newExerciseId, setNewExerciseId] = useState(project.exercises[0]?.id ?? '');
   const [pendingDayId, setPendingDayId] = useState<string | null>(null);
+  const [pendingRemoval, setPendingRemoval] = useState<{
+    entryId: string;
+    exerciseName: string;
+    scope: 'week' | 'all';
+    count: number;
+  } | null>(null);
 
   useEffect(() => {
     if (!project.dayTemplates.some((day) => day.id === selectedDayId)) {
@@ -30,10 +36,35 @@ export default function StructureEditor({ weekId }: StructureEditorProps) {
     }
   }, [project.dayTemplates, selectedDayId]);
 
+  useEffect(() => {
+    if (!project.exercises.some((exercise) => exercise.id === newExerciseId)) {
+      setNewExerciseId(project.exercises[0]?.id ?? '');
+    }
+  }, [project.exercises, newExerciseId]);
+
   const week = project.weeks.find((item) => item.id === weekId);
   const selectedDay = week?.days.find((day) => day.dayTemplateId === selectedDayId);
   const selectedDayTemplate = project.dayTemplates.find((day) => day.id === selectedDayId);
   const pendingDay = project.dayTemplates.find((day) => day.id === pendingDayId);
+
+  const requestRemoval = (
+    entryId: string,
+    exerciseId: string,
+    exerciseName: string,
+    scope: 'week' | 'all',
+  ) => {
+    const count =
+      scope === 'week'
+        ? 1
+        : project.weeks.reduce((sum, week) => {
+            const day = week.days.find((item) => item.dayTemplateId === selectedDayId);
+            return (
+              sum +
+              (day?.entries.filter((entry) => entry.exerciseId === exerciseId).length ?? 0)
+            );
+          }, 0);
+    setPendingRemoval({ entryId, exerciseName, scope, count });
+  };
 
   const addDay = () => {
     const name = newDayName.trim();
@@ -153,7 +184,14 @@ export default function StructureEditor({ weekId }: StructureEditorProps) {
                       type="button"
                       className="icon-button"
                       aria-label={`Убрать ${exercise?.name} из этой недели`}
-                      onClick={() => removeEntry(weekId, selectedDayId!, entry.id, 'week')}
+                      onClick={() =>
+                        requestRemoval(
+                          entry.id,
+                          entry.exerciseId,
+                          exercise?.name ?? 'Упражнение',
+                          'week',
+                        )
+                      }
                     >
                       <X size={15} />
                     </button>
@@ -161,7 +199,14 @@ export default function StructureEditor({ weekId }: StructureEditorProps) {
                       type="button"
                       className="icon-button"
                       aria-label={`Убрать ${exercise?.name} из всех недель`}
-                      onClick={() => removeEntry(weekId, selectedDayId!, entry.id, 'all')}
+                      onClick={() =>
+                        requestRemoval(
+                          entry.id,
+                          entry.exerciseId,
+                          exercise?.name ?? 'Упражнение',
+                          'all',
+                        )
+                      }
                     >
                       <Trash2 size={15} />
                     </button>
@@ -201,6 +246,24 @@ export default function StructureEditor({ weekId }: StructureEditorProps) {
           </div>
         </div>
       </div>
+
+      <ConfirmDialog
+        open={pendingRemoval !== null}
+        title="Убрать упражнение?"
+        message={
+          pendingRemoval
+            ? `«${pendingRemoval.exerciseName}» будет убрано из ${pendingRemoval.count} строк программы${pendingRemoval.scope === 'all' ? ' во всех неделях' : ' в этой неделе'}.`
+            : ''
+        }
+        confirmLabel="Убрать"
+        onCancel={() => setPendingRemoval(null)}
+        onConfirm={() => {
+          if (pendingRemoval) {
+            removeEntry(weekId, selectedDayId!, pendingRemoval.entryId, pendingRemoval.scope);
+          }
+          setPendingRemoval(null);
+        }}
+      />
 
       <ConfirmDialog
         open={pendingDayId !== null}

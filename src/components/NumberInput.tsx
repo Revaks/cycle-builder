@@ -37,6 +37,7 @@ export default function NumberInput({
         max={max}
         step={step}
         disabled={disabled}
+        onBlur={() => setDraft(value === null ? '' : String(value))}
         onChange={(event) => {
           const raw = event.target.value;
           setDraft(raw);

@@ -27,13 +27,15 @@ interface Draft {
   rounding: RoundingMode;
 }
 
-const EMPTY_DRAFT: Draft = {
-  name: '',
-  oneRM: null,
-  impact: 1,
-  multiplier: 1,
-  rounding: 'auto',
-};
+function emptyDraft(rounding: RoundingMode): Draft {
+  return {
+    name: '',
+    oneRM: null,
+    impact: 1,
+    multiplier: 1,
+    rounding,
+  };
+}
 
 export default function ExercisesPage() {
   const project = useProjectStore((state) => state.project);
@@ -41,7 +43,7 @@ export default function ExercisesPage() {
   const updateExercise = useProjectStore((state) => state.updateExercise);
   const removeExercise = useProjectStore((state) => state.removeExercise);
   const [query, setQuery] = useState('');
-  const [draft, setDraft] = useState<Draft>(EMPTY_DRAFT);
+  const [draft, setDraft] = useState<Draft>(() => emptyDraft(project.defaultRounding));
   const [pendingDelete, setPendingDelete] = useState<Exercise | null>(null);
 
   const usageById = useMemo(() => {
@@ -69,7 +71,7 @@ export default function ExercisesPage() {
       multiplier: draft.multiplier,
       rounding: draft.rounding,
     });
-    setDraft(EMPTY_DRAFT);
+    setDraft(emptyDraft(project.defaultRounding));
   };
 
   const pendingUsage = pendingDelete ? (usageById.get(pendingDelete.id) ?? 0) : 0;

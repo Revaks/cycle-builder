@@ -1,13 +1,14 @@
 import EntryRow from './EntryRow';
-import type { ComputedDay } from '../domain/types';
+import type { ComputedDay, Issue } from '../domain/types';
 import { formatKg, formatMinutes } from '../utils/format';
 
 interface DayCardProps {
   day: ComputedDay;
   weekId: string;
+  issues: Issue[];
 }
 
-export default function DayCard({ day, weekId }: DayCardProps) {
+export default function DayCard({ day, weekId, issues }: DayCardProps) {
   return (
     <section className={`card day-card ${day.entries.length === 0 ? 'is-empty' : ''}`}>
       <div className="day-head">
@@ -45,6 +46,7 @@ export default function DayCard({ day, weekId }: DayCardProps) {
               entry={entry}
               weekId={weekId}
               dayTemplateId={day.dayTemplateId}
+              issues={issues}
             />
           ))
         )}

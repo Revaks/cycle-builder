@@ -162,6 +162,8 @@ export function validateProject(project: Project): Issue[] {
   const exerciseIds = new Set<string>();
   const dayIds = new Set<string>();
   const exerciseNames = new Map<string, string>();
+  const exerciseNamesById = new Map(project.exercises.map((exercise) => [exercise.id, exercise.name]));
+  const dayNamesById = new Map(project.dayTemplates.map((day) => [day.id, day.name]));
 
   for (const exercise of project.exercises) {
     if (exerciseIds.has(exercise.id)) {
@@ -343,12 +345,14 @@ export function validateProject(project: Project): Issue[] {
           });
         }
 
+        const context = `«${exerciseNamesById.get(entry.exerciseId) ?? 'Упражнение'}», ${dayNamesById.get(day.dayTemplateId) ?? day.dayTemplateId}`;
+
         for (const group of entry.groups) {
           if (!isFiniteNumber(group.percent) || group.percent < 0 || group.percent > 100) {
             issues.push({
               severity: 'error',
               code: 'INVALID_PERCENT',
-              message: `Процент должен быть в диапазоне 0–100`,
+              message: `${context}: процент должен быть в диапазоне 0–100`,
               weekId: week.id,
               dayTemplateId: day.dayTemplateId,
               entryId: entry.id,
@@ -359,7 +363,7 @@ export function validateProject(project: Project): Issue[] {
             issues.push({
               severity: 'error',
               code: 'INVALID_REPS',
-              message: `Повторы должны быть целым числом больше нуля`,
+              message: `${context}: повторы должны быть целым числом больше нуля`,
               weekId: week.id,
               dayTemplateId: day.dayTemplateId,
               entryId: entry.id,
@@ -370,7 +374,7 @@ export function validateProject(project: Project): Issue[] {
             issues.push({
               severity: 'error',
               code: 'INVALID_SETS',
-              message: `Подходы должны быть целым числом больше нуля`,
+              message: `${context}: подходы должны быть целым числом больше нуля`,
               weekId: week.id,
               dayTemplateId: day.dayTemplateId,
               entryId: entry.id,
@@ -432,7 +436,8 @@ export function validateProject(project: Project): Issue[] {
   if (
     !Array.isArray(project.metrics.funtikovTable) ||
     project.metrics.funtikovTable.length !== 101 ||
-    !project.metrics.funtikovTable.every(isFiniteNumber)
+    !project.metrics.funtikovTable.every(isFiniteNumber) ||
+    project.metrics.funtikovTable.some((value) => value < 0)
   ) {
     issues.push({
       severity: 'error',
@@ -445,8 +450,15 @@ export function validateProject(project: Project): Issue[] {
   const thresholdsValid =
     Array.isArray(thresholds) &&
     thresholds.every(
-      (item) => isFiniteNumber(item.belowPercent) && isFiniteNumber(item.factor),
+      (item) =>
+        isFiniteNumber(item.belowPercent) &&
+        item.belowPercent >= 0 &&
+        item.belowPercent <= 100 &&
+        isFiniteNumber(item.factor) &&
+        item.factor >= 0,
     ) &&
+    isFiniteNumber(project.metrics.timeFallbackFactor) &&
+    project.metrics.timeFallbackFactor >= 0 &&
     thresholds.every(
       (item, index) => index === 0 || item.belowPercent > thresholds[index - 1].belowPercent,
     );
@@ -454,7 +466,27 @@ export function validateProject(project: Project): Issue[] {
     issues.push({
       severity: 'error',
       code: 'INVALID_TIME_THRESHOLDS',
-      message: 'Пороги времени должны возрастать и содержать числа',
+      message: 'Пороги времени должны возрастать, а факторы — быть неотрицательными числами',
+    });
+  }
+
+  const impactValid =
+    isFiniteNumber(project.metrics.impactHeavyThreshold) &&
+    project.metrics.impactHeavyThreshold >= 0 &&
+    isFiniteNumber(project.metrics.impactLightThreshold) &&
+    project.metrics.impactLightThreshold >= 0 &&
+    project.metrics.impactHeavyThreshold >= project.metrics.impactLightThreshold &&
+    isFiniteNumber(project.metrics.impactHeavyFactor) &&
+    project.metrics.impactHeavyFactor >= 0 &&
+    isFiniteNumber(project.metrics.impactMediumFactor) &&
+    project.metrics.impactMediumFactor >= 0 &&
+    isFiniteNumber(project.metrics.impactLightFactor) &&
+    project.metrics.impactLightFactor >= 0;
+  if (!impactValid) {
+    issues.push({
+      severity: 'error',
+      code: 'INVALID_IMPACT_FACTORS',
+      message: 'Факторы воздействия должны быть неотрицательными, а тяжёлый порог — не меньше лёгкого',
     });
   }
 
@@ -473,6 +505,13 @@ export function parseProjectJson(
     value = JSON.parse(text);
   } catch {
     return { ok: false, error: 'Файл не является корректным JSON' };
+  }
+
+  if (isRecord(value) && 'schemaVersion' in value && value.schemaVersion !== 1) {
+    return {
+      ok: false,
+      error: `Неподдерживаемая версия схемы: ${String(value.schemaVersion)}. Ожидается версия 1.`,
+    };
   }
 
   if (!isProjectShape(value)) {

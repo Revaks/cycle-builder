@@ -39,6 +39,11 @@ export default function PrintView({ project, cycle, scope }: PrintViewProps) {
               </div>
             </header>
 
+            <div className="print-notes">
+              <span>Заметки</span>
+              <div className="print-notes-space" />
+            </div>
+
             {days.map((day) => (
               <section className="print-day" key={day.dayTemplateId}>
                 <div className="print-day-head">

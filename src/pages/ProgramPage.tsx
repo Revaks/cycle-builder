@@ -14,10 +14,11 @@ interface ProgramPageProps {
 }
 
 export default function ProgramPage({ initialWeekId }: ProgramPageProps) {
-  const { cycle } = useComputedCycle();
+  const { cycle, issues } = useComputedCycle();
   const addWeek = useProjectStore((state) => state.addWeek);
   const duplicateWeek = useProjectStore((state) => state.duplicateWeek);
   const removeWeek = useProjectStore((state) => state.removeWeek);
+  const setWeekDeload = useProjectStore((state) => state.setWeekDeload);
   const [selectedWeekId, setSelectedWeekId] = useState<string | undefined>(initialWeekId);
   const [deleteOpen, setDeleteOpen] = useState(false);
   const [structureOpen, setStructureOpen] = useState(false);
@@ -134,7 +135,20 @@ export default function ProgramPage({ initialWeekId }: ProgramPageProps) {
                 <p className="eyebrow">Выбрано</p>
                 <h3>{selectedWeek.label}</h3>
               </div>
-              {selectedWeek.isDeload && <span className="badge badge-warning">разгрузка</span>}
+              <div className="week-summary-controls">
+                {selectedWeek.isDeload && <span className="badge badge-warning">разгрузка</span>}
+                <label className="deload-toggle">
+                  <input
+                    type="checkbox"
+                    aria-label="Разгрузочная неделя"
+                    checked={selectedWeek.isDeload}
+                    onChange={(event) =>
+                      setWeekDeload(selectedWeek.weekId, event.target.checked)
+                    }
+                  />
+                  Разгрузочная
+                </label>
+              </div>
             </div>
             <div className="week-summary-metrics">
               <span>
@@ -162,7 +176,12 @@ export default function ProgramPage({ initialWeekId }: ProgramPageProps) {
 
           <div className="day-grid">
             {selectedWeek.days.map((day) => (
-              <DayCard key={day.dayTemplateId} day={day} weekId={selectedWeek.weekId} />
+              <DayCard
+                key={day.dayTemplateId}
+                day={day}
+                weekId={selectedWeek.weekId}
+                issues={issues}
+              />
             ))}
           </div>
         </>

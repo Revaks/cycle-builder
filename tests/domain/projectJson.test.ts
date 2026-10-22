@@ -16,7 +16,9 @@ describe('project JSON', () => {
 
   it('отклоняет чужую версию', () => {
     const project = { ...createSeedProject(), schemaVersion: 2 };
-    expect(parseProjectJson(JSON.stringify(project)).ok).toBe(false);
+    const parsed = parseProjectJson(JSON.stringify(project));
+    expect(parsed.ok).toBe(false);
+    if (!parsed.ok) expect(parsed.error).toContain('2');
   });
 
   it('отклоняет битую ссылку', () => {

@@ -57,9 +57,11 @@ export function calculateEntry(
   const kpsh = groups.reduce((sum, group) => sum + group.kpsh, 0);
   const funtikov = groups.reduce((sum, group) => sum + (group.funtikov ?? 0), 0);
   const timeMinutes = groups.reduce((sum, group) => sum + group.timeMinutes, 0);
-  const avgWeight = kpsh > 0 ? tonnage / kpsh : 0;
+  const hasMissingOneRM = oneRM === null;
+  const weightedKpsh = hasMissingOneRM ? 0 : kpsh;
+  const avgWeight = weightedKpsh > 0 ? tonnage / weightedKpsh : null;
   const relativeIntensity =
-    oneRM === null || exercise.multiplier <= 0
+    hasMissingOneRM || exercise.multiplier <= 0 || avgWeight === null
       ? null
       : avgWeight / (oneRM * exercise.multiplier);
 
@@ -70,11 +72,12 @@ export function calculateEntry(
     groups,
     tonnage,
     kpsh,
+    weightedKpsh,
     funtikov,
     timeMinutes,
     avgWeight,
     relativeIntensity,
-    hasMissingOneRM: oneRM === null,
+    hasMissingOneRM,
   };
 }
 
@@ -94,6 +97,7 @@ function calculateDay(
 
   const tonnage = entries.reduce((sum, entry) => sum + entry.tonnage, 0);
   const kpsh = entries.reduce((sum, entry) => sum + entry.kpsh, 0);
+  const weightedKpsh = entries.reduce((sum, entry) => sum + entry.weightedKpsh, 0);
   const funtikov = entries.reduce((sum, entry) => sum + entry.funtikov, 0);
   const rawTime = entries.reduce((sum, entry) => sum + entry.timeMinutes, 0);
 
@@ -103,9 +107,10 @@ function calculateDay(
     entries,
     tonnage,
     kpsh,
+    weightedKpsh,
     funtikov,
     timeMinutes: rawTime === 0 ? 0 : Math.floor(rawTime + 30),
-    avgWeight: kpsh > 0 ? tonnage / kpsh : 0,
+    avgWeight: weightedKpsh > 0 ? tonnage / weightedKpsh : null,
   };
 }
 
@@ -136,6 +141,7 @@ export function calculateCycle(project: Project): ComputedCycle {
 
     const tonnage = days.reduce((sum, day) => sum + day.tonnage, 0);
     const kpsh = days.reduce((sum, day) => sum + day.kpsh, 0);
+    const weightedKpsh = days.reduce((sum, day) => sum + day.weightedKpsh, 0);
     const funtikov = days.reduce((sum, day) => sum + day.funtikov, 0);
     const timeMinutes = days.reduce((sum, day) => sum + day.timeMinutes, 0);
 
@@ -147,14 +153,16 @@ export function calculateCycle(project: Project): ComputedCycle {
       days,
       tonnage,
       kpsh,
+      weightedKpsh,
       funtikov,
       timeMinutes,
-      avgWeight: kpsh > 0 ? tonnage / kpsh : 0,
+      avgWeight: weightedKpsh > 0 ? tonnage / weightedKpsh : null,
     };
   });
 
   const tonnage = weeks.reduce((sum, week) => sum + week.tonnage, 0);
   const kpsh = weeks.reduce((sum, week) => sum + week.kpsh, 0);
+  const weightedKpsh = weeks.reduce((sum, week) => sum + week.weightedKpsh, 0);
   const funtikov = weeks.reduce((sum, week) => sum + week.funtikov, 0);
   const timeMinutes = weeks.reduce((sum, week) => sum + week.timeMinutes, 0);
 
@@ -162,8 +170,9 @@ export function calculateCycle(project: Project): ComputedCycle {
     weeks,
     tonnage,
     kpsh,
+    weightedKpsh,
     funtikov,
     timeMinutes,
-    avgWeight: kpsh > 0 ? tonnage / kpsh : 0,
+    avgWeight: weightedKpsh > 0 ? tonnage / weightedKpsh : null,
   };
 }

@@ -96,9 +96,10 @@ export interface ComputedEntry {
   groups: ComputedGroup[];
   tonnage: number;
   kpsh: number;
+  weightedKpsh: number;
   funtikov: number;
   timeMinutes: number;
-  avgWeight: number;
+  avgWeight: number | null;
   relativeIntensity: number | null;
   hasMissingOneRM: boolean;
 }
@@ -109,9 +110,10 @@ export interface ComputedDay {
   entries: ComputedEntry[];
   tonnage: number;
   kpsh: number;
+  weightedKpsh: number;
   funtikov: number;
   timeMinutes: number;
-  avgWeight: number;
+  avgWeight: number | null;
 }
 
 export interface ComputedWeek {
@@ -122,18 +124,20 @@ export interface ComputedWeek {
   days: ComputedDay[];
   tonnage: number;
   kpsh: number;
+  weightedKpsh: number;
   funtikov: number;
   timeMinutes: number;
-  avgWeight: number;
+  avgWeight: number | null;
 }
 
 export interface ComputedCycle {
   weeks: ComputedWeek[];
   tonnage: number;
   kpsh: number;
+  weightedKpsh: number;
   funtikov: number;
   timeMinutes: number;
-  avgWeight: number;
+  avgWeight: number | null;
 }
 
 export type IssueSeverity = 'error' | 'warning';

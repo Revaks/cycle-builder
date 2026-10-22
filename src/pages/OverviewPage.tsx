@@ -14,6 +14,11 @@ export default function OverviewPage({ onOpenWeek }: OverviewPageProps) {
   const { cycle, issues } = useComputedCycle();
   const maxTonnage = Math.max(...cycle.weeks.map((week) => week.tonnage), 1);
   const sessions = cycle.weeks.reduce((sum, week) => sum + week.days.length, 0);
+  const exerciseCount = new Set(
+    cycle.weeks.flatMap((week) =>
+      week.days.flatMap((day) => day.entries.map((entry) => entry.exercise.id)),
+    ),
+  ).size;
   const errors = issues.filter((issue) => issue.severity === 'error');
   const warnings = issues.filter((issue) => issue.severity === 'warning');
 
@@ -39,6 +44,11 @@ export default function OverviewPage({ onOpenWeek }: OverviewPageProps) {
           <span>Тоннаж</span>
           <strong>{formatNumber(cycle.tonnage)} кг</strong>
           <small>средний вес {formatKg(cycle.avgWeight)}</small>
+        </article>
+        <article className="card kpi">
+          <span>Упражнения</span>
+          <strong>{exerciseCount}</strong>
+          <small>в справочнике</small>
         </article>
         <article className="card kpi">
           <span>КПШ</span>

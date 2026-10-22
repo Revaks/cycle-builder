@@ -16,6 +16,23 @@ describe('ProgramPage', () => {
     expect(screen.getAllByText('32.5 кг').length).toBeGreaterThan(0);
   });
 
+  it('отмечает неделю разгрузочной', async () => {
+    const user = userEvent.setup();
+    render(<ProgramPage />);
+    const checkbox = screen.getByLabelText('Разгрузочная неделя');
+    expect(checkbox).not.toBeChecked();
+    await user.click(checkbox);
+    expect(useProjectStore.getState().project.weeks[0].isDeload).toBe(true);
+  });
+
+  it('показывает ошибку рядом со строкой упражнения', () => {
+    const project = createSeedProject();
+    project.weeks[0].days[0].entries[0].groups[0].percent = 101;
+    useProjectStore.setState({ project });
+    render(<ProgramPage />);
+    expect(screen.getByLabelText('Ошибок в строке: 1')).toBeInTheDocument();
+  });
+
   it('пересчитывает вес при изменении процента', async () => {
     const user = userEvent.setup();
     render(<ProgramPage />);

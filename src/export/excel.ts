@@ -52,16 +52,16 @@ function styleDataRow(row: ExcelJS.Row): void {
 function selectWeeks(
   cycle: ComputedCycle,
   scope: ExportScope,
-): Array<{ week: ComputedWeek; dayTemplateId?: string }> {
-  if (scope.type === 'cycle') return cycle.weeks.map((week) => ({ week }));
-  if (scope.type === 'week') {
-    return cycle.weeks
-      .filter((week) => week.weekId === scope.weekId)
-      .map((week) => ({ week }));
+): Array<{ week: ComputedWeek; number: number; dayTemplateId?: string }> {
+  if (scope.type === 'cycle') {
+    return cycle.weeks.map((week, index) => ({ week, number: index + 1 }));
   }
-  return cycle.weeks
-    .filter((week) => week.weekId === scope.weekId)
-    .map((week) => ({ week, dayTemplateId: scope.dayTemplateId }));
+  const number = cycle.weeks.findIndex((week) => week.weekId === scope.weekId) + 1;
+  if (number === 0) return [];
+  const week = cycle.weeks[number - 1];
+  return scope.type === 'week'
+    ? [{ week, number }]
+    : [{ week, number, dayTemplateId: scope.dayTemplateId }];
 }
 
 function addSummarySheet(
@@ -85,7 +85,7 @@ function addSummarySheet(
       Math.round(week.tonnage),
       week.kpsh,
       week.timeMinutes,
-      Number(week.avgWeight.toFixed(2)),
+      week.avgWeight === null ? null : Number(week.avgWeight.toFixed(2)),
       Number(week.funtikov.toFixed(2)),
     ]);
     row.getCell(2).numFmt = '0';
@@ -95,15 +95,14 @@ function addSummarySheet(
     styleDataRow(row);
   }
 
+  const totalTonnage = weeks.reduce((sum, week) => sum + week.tonnage, 0);
+  const totalWeightedKpsh = weeks.reduce((sum, week) => sum + week.weightedKpsh, 0);
   const total = sheet.addRow([
     'Итого',
-    Math.round(weeks.reduce((sum, week) => sum + week.tonnage, 0)),
+    Math.round(totalTonnage),
     weeks.reduce((sum, week) => sum + week.kpsh, 0),
     weeks.reduce((sum, week) => sum + week.timeMinutes, 0),
-    Number(
-      (weeks.reduce((sum, week) => sum + week.tonnage, 0) /
-        Math.max(1, weeks.reduce((sum, week) => sum + week.kpsh, 0))).toFixed(2),
-    ),
+    totalWeightedKpsh > 0 ? Number((totalTonnage / totalWeightedKpsh).toFixed(2)) : null,
     Number(weeks.reduce((sum, week) => sum + week.funtikov, 0).toFixed(2)),
   ]);
   total.getCell(2).numFmt = '0';
@@ -119,9 +118,10 @@ function addWeekSheet(
   workbook: ExcelJS.Workbook,
   project: Project,
   week: ComputedWeek,
+  weekNumber: number,
   dayTemplateId?: string,
 ): void {
-  const sheet = workbook.addWorksheet(`Неделя ${week.label.replace('Неделя ', '')}`);
+  const sheet = workbook.addWorksheet(`Неделя ${weekNumber}`);
   sheet.columns = [
     { width: 14 },
     { width: 30 },
@@ -174,7 +174,7 @@ function addWeekSheet(
             row.getCell(5).numFmt = '0"%"';
             row.getCell(6).numFmt = '0.0';
             row.getCell(7).numFmt = '0';
-            row.getCell(9).numFmt = '0.0';
+            row.getCell(9).numFmt = '0';
             styleDataRow(row);
           }
         }
@@ -241,7 +241,7 @@ export async function buildWorkbook(
 
   addSummarySheet(workbook, weeks);
   for (const item of selected) {
-    addWeekSheet(workbook, project, item.week, item.dayTemplateId);
+    addWeekSheet(workbook, project, item.week, item.number, item.dayTemplateId);
   }
 
   return workbook;

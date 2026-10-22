@@ -6,6 +6,7 @@ import {
   applyWave,
   duplicateWeek,
   removeExercise,
+  removeWeek,
   setDefaultRounding,
   setMetrics,
   setProgression,
@@ -82,6 +83,33 @@ describe('projectActions', () => {
     expect([0, 1, 2].map((index) => waveTargetPercent('linear', 50, 5, index))).toEqual([
       50, 55, 60,
     ]);
+  });
+
+  it('делает названия недель уникальными после дублирования и удаления', () => {
+    const project = createSeedProject();
+    const duplicated = duplicateWeek(project, project.weeks[0].id);
+    expect(new Set(duplicated.weeks.map((week) => week.label)).size).toBe(duplicated.weeks.length);
+
+    const removed = removeWeek(duplicated, duplicated.weeks[1].id);
+    const added = addWeek(removed);
+    expect(new Set(added.weeks.map((week) => week.label)).size).toBe(added.weeks.length);
+  });
+
+  it('считает верхней последнюю группу, а не максимальную', () => {
+    const project = createSeedProject();
+    const entry = project.weeks[0].days[0].entries[0];
+    entry.groups[0].percent = 70;
+    entry.groups[1].percent = 60;
+    entry.groups[2].percent = 50;
+    const next = applyWave(project, {
+      weekIds: [project.weeks[0].id],
+      exerciseIds: ['ex-01'],
+      mode: 'constant',
+      startPercent: 60,
+      stepPercent: 0,
+    });
+    const shifted = next.weeks[0].days[0].entries[0].groups.map((group) => group.percent);
+    expect(shifted).toEqual([80, 70, 60]);
   });
 
   it('обновляет настройки прогрессии, округления и метрик', () => {

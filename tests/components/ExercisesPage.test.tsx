@@ -10,6 +10,21 @@ beforeEach(() => {
 });
 
 describe('ExercisesPage', () => {
+  it('применяет округление по умолчанию к новому упражнению', async () => {
+    const user = userEvent.setup();
+    const project = createSeedProject();
+    project.defaultRounding = 0.5;
+    useProjectStore.setState({ project });
+    render(<ExercisesPage />);
+    await user.type(screen.getByLabelText('Название нового упражнения'), 'Тяга тест');
+    await user.type(screen.getByLabelText('1ПМ нового упражнения'), '50');
+    await user.click(screen.getByRole('button', { name: 'Добавить' }));
+    const added = useProjectStore
+      .getState()
+      .project.exercises.find((exercise) => exercise.name === 'Тяга тест');
+    expect(added?.rounding).toBe(0.5);
+  });
+
   it('меняет 1ПМ упражнения', async () => {
     const user = userEvent.setup();
     render(<ExercisesPage />);

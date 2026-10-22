@@ -146,6 +146,12 @@ export function moveDayTemplate(
   return touch(next);
 }
 
+function normalizeWeekLabels(project: Project): void {
+  project.weeks.forEach((week, index) => {
+    week.label = `Неделя ${index + 1}`;
+  });
+}
+
 function createEmptyWeek(project: Project): Week {
   return {
     id: newId('week'),
@@ -159,6 +165,7 @@ export function addWeek(project: Project, copyFromWeekId?: string): Project {
   if (copyFromWeekId) return duplicateWeek(project, copyFromWeekId);
   const next = clone(project);
   next.weeks.push(createEmptyWeek(next));
+  normalizeWeekLabels(next);
   return touch(next);
 }
 
@@ -169,7 +176,7 @@ export function duplicateWeek(project: Project, weekId: string): Project {
   const source = next.weeks[index];
   const copy: Week = {
     id: newId('week'),
-    label: `Неделя ${index + 2}`,
+    label: '',
     isDeload: source.isDeload,
     days: source.days.map((day) => ({
       dayTemplateId: day.dayTemplateId,
@@ -181,12 +188,14 @@ export function duplicateWeek(project: Project, weekId: string): Project {
     })),
   };
   next.weeks.splice(index + 1, 0, copy);
+  normalizeWeekLabels(next);
   return touch(next);
 }
 
 export function removeWeek(project: Project, weekId: string): Project {
   const next = clone(project);
   next.weeks = next.weeks.filter((week) => week.id !== weekId);
+  normalizeWeekLabels(next);
   return touch(next);
 }
 
@@ -196,6 +205,7 @@ export function moveWeek(project: Project, weekId: string, direction: -1 | 1): P
   const target = index + direction;
   if (index < 0 || target < 0 || target >= next.weeks.length) return project;
   [next.weeks[index], next.weeks[target]] = [next.weeks[target], next.weeks[index]];
+  normalizeWeekLabels(next);
   return touch(next);
 }
 
@@ -364,7 +374,7 @@ export function applyWave(project: Project, payload: WavePayload): Project {
     for (const day of week.days) {
       for (const entry of day.entries) {
         if (!exerciseIds.has(entry.exerciseId) || entry.groups.length === 0) continue;
-        const currentTop = Math.max(...entry.groups.map((group) => group.percent));
+        const currentTop = entry.groups[entry.groups.length - 1].percent;
         const delta = target - currentTop;
         entry.groups = entry.groups.map((group) => ({
           ...group,

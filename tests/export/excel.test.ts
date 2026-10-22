@@ -3,6 +3,7 @@ import { describe, expect, it } from 'vitest';
 import { buildWorkbook } from '../../src/export/excel';
 import { calculateCycle } from '../../src/domain/calculate';
 import { createSeedProject } from '../../src/domain/seed';
+import { duplicateWeek } from '../../src/store/projectActions';
 
 describe('buildWorkbook', () => {
   it('создаёт сводку и листы недель', async () => {
@@ -20,5 +21,12 @@ describe('buildWorkbook', () => {
     expect(week.getCell('A2').value).toBe('День');
     expect(week.getCell('B2').value).toBe('Упражнение');
     expect(week.getCell('F2').value).toBe('Вес');
+  });
+
+  it('не падает на повторяющихся названиях недель', async () => {
+    const project = duplicateWeek(createSeedProject(), 'week-1');
+    const wb = await buildWorkbook(project, calculateCycle(project));
+    const names = wb.worksheets.map((w) => w.name);
+    expect(new Set(names).size).toBe(names.length);
   });
 });

@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { createSeedProject } from '../domain/seed';
+import { hasBlockingErrors, isProjectShape, validateProject } from '../domain/validation';
 import type { Project, SetGroup } from '../domain/types';
 import * as actions from './projectActions';
 
@@ -154,6 +155,17 @@ export const useProjectStore = create<ProjectState>()(
       version: 1,
       storage: createJSONStorage(() => localStorage),
       partialize: (state) => ({ project: state.project }),
+      merge: (persisted, current) => {
+        const candidate = (persisted as { project?: unknown } | undefined)?.project;
+        if (
+          candidate &&
+          isProjectShape(candidate) &&
+          !hasBlockingErrors(validateProject(candidate))
+        ) {
+          return { ...current, project: candidate };
+        }
+        return current;
+      },
     },
   ),
 );

@@ -159,14 +159,15 @@ def main() -> None:
                 )
                 entry_count += 1
 
+            day_total_row = week_start + day_offset + 6
             week_days.append({'dayTemplateId': day_id, 'entries': entries})
             expected_days.append(
                 {
                     'dayTemplateId': day_id,
-                    'tonnage': rounded(sum(e['tonnage'] for e in expected_entries)),
-                    'kpsh': rounded(sum(e['kpsh'] for e in expected_entries)),
-                    'funtikov': rounded(sum(e['funtikov'] for e in expected_entries)),
-                    'timeMinutes': rounded(as_minutes(ws.cell(week_start + day_offset + 6, 28).value)),
+                    'tonnage': rounded(number(ws.cell(day_total_row, 22).value)),
+                    'kpsh': rounded(number(ws.cell(day_total_row, 27).value)),
+                    'funtikov': rounded(number(ws.cell(day_total_row, 26).value)),
+                    'timeMinutes': rounded(as_minutes(ws.cell(day_total_row, 28).value)),
                     'entries': expected_entries,
                 }
             )
