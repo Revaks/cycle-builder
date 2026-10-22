@@ -4,3 +4,11 @@ dist/
 *.local
 .DS_Store
 release/
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+android/keystore.properties
+android/release/
+*.iml
