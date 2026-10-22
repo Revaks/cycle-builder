@@ -323,22 +323,29 @@ function findEntry(
   return day?.entries.find((entry) => entry.id === entryId);
 }
 
+export function waveTargetPercent(
+  mode: WavePayload['mode'],
+  startPercent: number,
+  stepPercent: number,
+  index: number,
+): number {
+  const wavePattern = [0, 1, -1];
+  if (mode === 'linear') return startPercent + stepPercent * index;
+  if (mode === 'constant') return startPercent;
+  return startPercent + stepPercent * wavePattern[index % 3];
+}
+
 export function applyWave(project: Project, payload: WavePayload): Project {
   const next = clone(project);
   const exerciseIds = new Set(payload.exerciseIds);
-  const wavePattern = [0, 1, -1];
 
   payload.weekIds.forEach((weekId, index) => {
     const week = next.weeks.find((item) => item.id === weekId);
     if (!week) return;
 
-    const targetRaw =
-      payload.mode === 'linear'
-        ? payload.startPercent + payload.stepPercent * index
-        : payload.mode === 'constant'
-          ? payload.startPercent
-          : payload.startPercent + payload.stepPercent * wavePattern[index % 3];
-    const target = clampPercent(targetRaw);
+    const target = clampPercent(
+      waveTargetPercent(payload.mode, payload.startPercent, payload.stepPercent, index),
+    );
 
     for (const day of week.days) {
       for (const entry of day.entries) {

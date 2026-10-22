@@ -7,6 +7,7 @@ import {
   duplicateWeek,
   removeExercise,
   updateGroup,
+  waveTargetPercent,
 } from '../../src/store/projectActions';
 
 describe('projectActions', () => {
@@ -66,5 +67,17 @@ describe('projectActions', () => {
     expect(tops).toEqual([50, 55, 60]);
     const shifted = next.weeks[0].days[0].entries[0].groups.map((g) => g.percent);
     expect(shifted).toEqual([30, 43, 50]);
+  });
+
+  it('строит целевую волну процентов', () => {
+    expect([0, 1, 2, 3].map((index) => waveTargetPercent('wave', 50, 5, index))).toEqual([
+      50, 55, 45, 50,
+    ]);
+    expect([0, 1, 2].map((index) => waveTargetPercent('constant', 50, 5, index))).toEqual([
+      50, 50, 50,
+    ]);
+    expect([0, 1, 2].map((index) => waveTargetPercent('linear', 50, 5, index))).toEqual([
+      50, 55, 60,
+    ]);
   });
 });

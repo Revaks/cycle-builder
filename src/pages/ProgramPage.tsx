@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
-import { CalendarDays, Layers3, Timer, Weight } from 'lucide-react';
+import { CalendarDays, Layers3, Settings2, Timer, Waves, Weight } from 'lucide-react';
 import ConfirmDialog from '../components/ConfirmDialog';
 import DayCard from '../components/DayCard';
+import StructureEditor from '../components/StructureEditor';
+import WaveGeneratorDialog from '../components/WaveGeneratorDialog';
 import WeekTabs from '../components/WeekTabs';
 import { useComputedCycle } from '../selectors/useComputedCycle';
 import { useProjectStore } from '../store/projectStore';
@@ -18,6 +20,8 @@ export default function ProgramPage({ initialWeekId }: ProgramPageProps) {
   const removeWeek = useProjectStore((state) => state.removeWeek);
   const [selectedWeekId, setSelectedWeekId] = useState<string | undefined>(initialWeekId);
   const [deleteOpen, setDeleteOpen] = useState(false);
+  const [structureOpen, setStructureOpen] = useState(false);
+  const [waveOpen, setWaveOpen] = useState(false);
 
   useEffect(() => {
     if (initialWeekId) setSelectedWeekId(initialWeekId);
@@ -91,10 +95,24 @@ export default function ProgramPage({ initialWeekId }: ProgramPageProps) {
             Меняйте подходы, повторы и проценты — рабочий вес и итоги пересчитываются сразу.
           </p>
         </div>
-        <button type="button" className="button button-primary" onClick={handleAdd}>
-          <Layers3 size={17} />
-          Добавить неделю
-        </button>
+        <div className="header-actions">
+          <button
+            type="button"
+            className="button button-ghost"
+            onClick={() => setStructureOpen((open) => !open)}
+          >
+            <Settings2 size={17} />
+            Структура
+          </button>
+          <button type="button" className="button button-ghost" onClick={() => setWaveOpen(true)}>
+            <Waves size={17} />
+            Волна
+          </button>
+          <button type="button" className="button button-primary" onClick={handleAdd}>
+            <Layers3 size={17} />
+            Добавить неделю
+          </button>
+        </div>
       </section>
 
       <WeekTabs
@@ -105,6 +123,8 @@ export default function ProgramPage({ initialWeekId }: ProgramPageProps) {
         onDuplicate={handleDuplicate}
         onDelete={() => setDeleteOpen(true)}
       />
+
+      {structureOpen && selectedWeek && <StructureEditor weekId={selectedWeek.weekId} />}
 
       {selectedWeek && (
         <>
@@ -160,6 +180,8 @@ export default function ProgramPage({ initialWeekId }: ProgramPageProps) {
         onCancel={() => setDeleteOpen(false)}
         onConfirm={handleDelete}
       />
+
+      <WaveGeneratorDialog open={waveOpen} onClose={() => setWaveOpen(false)} />
     </div>
   );
 }
