@@ -1,0 +1,4128 @@
+{
+  "schemaVersion": 1,
+  "id": "cycle8-template",
+  "name": "Цикл 8 — шаблон",
+  "createdAt": "2026-10-22T00:00:00.000Z",
+  "updatedAt": "2026-10-22T00:00:00.000Z",
+  "unit": "kg",
+  "defaultRounding": "auto",
+  "exercises": [
+    {
+      "id": "ex-01",
+      "name": "Жим стоя",
+      "oneRM": 90.0,
+      "impact": 1.0,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-02",
+      "name": "Подъем гантели перед собой",
+      "oneRM": 35.0,
+      "impact": 0.3,
+      "multiplier": 2.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-03",
+      "name": "Подъем гантелей в стороны",
+      "oneRM": 22.0,
+      "impact": 0.3,
+      "multiplier": 2.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-04",
+      "name": "Присед",
+      "oneRM": 180.0,
+      "impact": 1.2,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-05",
+      "name": "Присед на груди",
+      "oneRM": 145.0,
+      "impact": 1.2,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-06",
+      "name": "Разгибания ног",
+      "oneRM": 16.0,
+      "impact": 0.4,
+      "multiplier": 5.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-07",
+      "name": "Жим лежа",
+      "oneRM": 140.0,
+      "impact": 1.0,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-08",
+      "name": "Жим на наклонной",
+      "oneRM": 125.0,
+      "impact": 1.0,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-09",
+      "name": "Кроссовер",
+      "oneRM": 10.0,
+      "impact": 0.3,
+      "multiplier": 4.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-10",
+      "name": "Французский жим",
+      "oneRM": 55.0,
+      "impact": 0.3,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-11",
+      "name": "Трицепс на блоке",
+      "oneRM": 20.0,
+      "impact": 0.3,
+      "multiplier": 2.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-12",
+      "name": "Разгибания из-за головы",
+      "oneRM": 30.0,
+      "impact": 0.3,
+      "multiplier": 2.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-13",
+      "name": "Тяга на прямых ногах",
+      "oneRM": 200.0,
+      "impact": 1.3,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-14",
+      "name": "Наклоны",
+      "oneRM": 130.0,
+      "impact": 1.0,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-15",
+      "name": "Тяга гантели в наклоне",
+      "oneRM": 70.0,
+      "impact": 0.5,
+      "multiplier": 2.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-16",
+      "name": "Тяга верхнего блока",
+      "oneRM": 25.0,
+      "impact": 0.4,
+      "multiplier": 5.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-17",
+      "name": "Бицепс стоя",
+      "oneRM": 60.0,
+      "impact": 0.4,
+      "multiplier": 1.0,
+      "rounding": "auto"
+    },
+    {
+      "id": "ex-18",
+      "name": "Молотковые сгибания",
+      "oneRM": 30.0,
+      "impact": 0.4,
+      "multiplier": 2.0,
+      "rounding": "auto"
+    }
+  ],
+  "dayTemplates": [
+    {
+      "id": "day-mon",
+      "name": "Пн"
+    },
+    {
+      "id": "day-wed",
+      "name": "Ср"
+    },
+    {
+      "id": "day-fri",
+      "name": "Пт"
+    }
+  ],
+  "weeks": [
+    {
+      "id": "week-1",
+      "label": "Неделя 1",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w1-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w1-d1-e1-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d1-e1-g2",
+                  "percent": 48.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w1-d1-e1-g3",
+                  "percent": 55.0,
+                  "reps": 8,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w1-d1-e2-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w1-d1-e3-g1",
+                  "percent": 44.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d1-e3-g2",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w1-d1-e4-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d1-e4-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w1-d1-e5-g1",
+                  "percent": 42.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w1-d1-e6-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d1-e6-g2",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w1-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w1-d2-e1-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d2-e1-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w1-d2-e2-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d2-e2-g2",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w1-d2-e3-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w1-d2-e4-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d2-e4-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w1-d2-e5-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d2-e5-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d2-e5-g3",
+                  "percent": 68.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w1-d2-e6-g1",
+                  "percent": 32.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w1-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w1-d3-e1-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d3-e1-g2",
+                  "percent": 56.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w1-d3-e2-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w1-d3-e3-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d3-e3-g2",
+                  "percent": 52.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w1-d3-e4-g1",
+                  "percent": 30.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w1-d3-e5-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d3-e5-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d3-e5-g3",
+                  "percent": 65.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w1-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w1-d3-e6-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w1-d3-e6-g2",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-2",
+      "label": "Неделя 2",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w2-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w2-d1-e1-g1",
+                  "percent": 42.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d1-e1-g2",
+                  "percent": 65.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w2-d1-e2-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d1-e2-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w2-d1-e3-g1",
+                  "percent": 38.0,
+                  "reps": 10,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w2-d1-e4-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d1-e4-g2",
+                  "percent": 63.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d1-e4-g3",
+                  "percent": 73.0,
+                  "reps": 8,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w2-d1-e5-g1",
+                  "percent": 38.0,
+                  "reps": 10,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w2-d1-e6-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d1-e6-g2",
+                  "percent": 60.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w2-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w2-d2-e1-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d2-e1-g2",
+                  "percent": 65.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w2-d2-e2-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d2-e2-g2",
+                  "percent": 67.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w2-d2-e3-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w2-d2-e4-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d2-e4-g2",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w2-d2-e5-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d2-e5-g2",
+                  "percent": 65.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w2-d2-e6-g1",
+                  "percent": 38.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w2-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w2-d3-e1-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w2-d3-e2-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w2-d3-e2-g2",
+                  "percent": 40.0,
+                  "reps": 15,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w2-d3-e3-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d3-e3-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w2-d3-e4-g1",
+                  "percent": 41.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w2-d3-e4-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w2-d3-e5-g1",
+                  "percent": 48.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d3-e5-g2",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d3-e5-g3",
+                  "percent": 70.0,
+                  "reps": 8,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w2-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w2-d3-e6-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w2-d3-e6-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-3",
+      "label": "Неделя 3",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w3-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w3-d1-e1-g1",
+                  "percent": 35.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d1-e1-g2",
+                  "percent": 40.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w3-d1-e2-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d1-e2-g2",
+                  "percent": 60.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w3-d1-e3-g1",
+                  "percent": 53.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w3-d1-e4-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d1-e4-g2",
+                  "percent": 65.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w3-d1-e5-g1",
+                  "percent": 50.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w3-d1-e6-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d1-e6-g2",
+                  "percent": 57.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w3-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w3-d2-e1-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d2-e1-g2",
+                  "percent": 70.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w3-d2-e2-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d2-e2-g2",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d2-e2-g3",
+                  "percent": 72.0,
+                  "reps": 8,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w3-d2-e3-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w3-d2-e4-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d2-e4-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w3-d2-e5-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d2-e5-g2",
+                  "percent": 68.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w3-d2-e6-g1",
+                  "percent": 41.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w3-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w3-d3-e1-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 4
+                },
+                {
+                  "id": "group-w3-d3-e1-g2",
+                  "percent": 63.0,
+                  "reps": 10,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w3-d3-e2-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w3-d3-e3-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d3-e3-g2",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w3-d3-e4-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w3-d3-e5-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d3-e5-g2",
+                  "percent": 63.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w3-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w3-d3-e6-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w3-d3-e6-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-4",
+      "label": "Неделя 4",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w4-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w4-d1-e1-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w4-d1-e1-g2",
+                  "percent": 45.0,
+                  "reps": 15,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w4-d1-e2-g1",
+                  "percent": 37.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w4-d1-e3-g1",
+                  "percent": 37.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w4-d1-e4-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d1-e4-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w4-d1-e5-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d1-e5-g2",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d1-e5-g3",
+                  "percent": 70.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w4-d1-e6-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w4-d1-e6-g2",
+                  "percent": 41.0,
+                  "reps": 15,
+                  "sets": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w4-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w4-d2-e1-g1",
+                  "percent": 41.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w4-d2-e2-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d2-e2-g2",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d2-e2-g3",
+                  "percent": 74.0,
+                  "reps": 8,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w4-d2-e3-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w4-d2-e4-g1",
+                  "percent": 37.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w4-d2-e5-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w4-d2-e6-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w4-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w4-d3-e1-g1",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d3-e1-g2",
+                  "percent": 70.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w4-d3-e2-g1",
+                  "percent": 45.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w4-d3-e3-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w4-d3-e4-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d3-e4-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d3-e4-g3",
+                  "percent": 72.0,
+                  "reps": 8,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w4-d3-e5-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w4-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w4-d3-e6-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w4-d3-e6-g2",
+                  "percent": 57.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-5",
+      "label": "Неделя 5",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w5-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w5-d1-e1-g1",
+                  "percent": 44.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d1-e1-g2",
+                  "percent": 52.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d1-e1-g3",
+                  "percent": 58.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w5-d1-e2-g1",
+                  "percent": 41.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w5-d1-e3-g1",
+                  "percent": 37.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w5-d1-e4-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d1-e4-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w5-d1-e5-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w5-d1-e5-g2",
+                  "percent": 60.0,
+                  "reps": 12,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w5-d1-e6-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w5-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w5-d2-e1-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w5-d2-e2-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w5-d2-e3-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d2-e3-g2",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w5-d2-e4-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w5-d2-e5-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w5-d2-e6-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w5-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w5-d3-e1-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d3-e1-g2",
+                  "percent": 63.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d3-e1-g3",
+                  "percent": 72.0,
+                  "reps": 8,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w5-d3-e2-g1",
+                  "percent": 52.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d3-e2-g2",
+                  "percent": 63.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w5-d3-e3-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d3-e3-g2",
+                  "percent": 50.0,
+                  "reps": 15,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w5-d3-e4-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d3-e4-g2",
+                  "percent": 63.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w5-d3-e4-g3",
+                  "percent": 71.0,
+                  "reps": 8,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w5-d3-e5-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w5-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w5-d3-e6-g1",
+                  "percent": 55.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-6",
+      "label": "Неделя 6",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w6-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w6-d1-e1-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w6-d1-e2-g1",
+                  "percent": 50.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d1-e2-g2",
+                  "percent": 63.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w6-d1-e3-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w6-d1-e4-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d1-e4-g2",
+                  "percent": 64.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w6-d1-e5-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d1-e5-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d1-e5-g3",
+                  "percent": 66.0,
+                  "reps": 8,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w6-d1-e6-g1",
+                  "percent": 33.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w6-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w6-d2-e1-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d2-e1-g2",
+                  "percent": 62.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d2-e1-g3",
+                  "percent": 70.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w6-d2-e2-g1",
+                  "percent": 32.0,
+                  "reps": 12,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w6-d2-e3-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d2-e3-g2",
+                  "percent": 57.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w6-d2-e4-g1",
+                  "percent": 45.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w6-d2-e5-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w6-d2-e6-g1",
+                  "percent": 53.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w6-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w6-d3-e1-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d3-e1-g2",
+                  "percent": 59.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w6-d3-e2-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w6-d3-e3-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 4
+                },
+                {
+                  "id": "group-w6-d3-e3-g2",
+                  "percent": 57.0,
+                  "reps": 10,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w6-d3-e4-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d3-e4-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w6-d3-e5-g1",
+                  "percent": 48.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d3-e5-g2",
+                  "percent": 54.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w6-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w6-d3-e6-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w6-d3-e6-g2",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-7",
+      "label": "Неделя 7",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w7-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w7-d1-e1-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w7-d1-e2-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w7-d1-e3-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w7-d1-e4-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w7-d1-e4-g2",
+                  "percent": 54.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w7-d1-e4-g3",
+                  "percent": 67.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w7-d1-e5-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w7-d1-e5-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w7-d1-e6-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w7-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w7-d2-e1-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w7-d2-e1-g2",
+                  "percent": 56.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w7-d2-e2-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w7-d2-e2-g2",
+                  "percent": 54.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w7-d2-e3-g1",
+                  "percent": 37.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w7-d2-e4-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w7-d2-e5-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 3
+                },
+                {
+                  "id": "group-w7-d2-e5-g2",
+                  "percent": 55.0,
+                  "reps": 8,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w7-d2-e6-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w7-d2-e6-g2",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w7-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w7-d3-e1-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w7-d3-e1-g2",
+                  "percent": 65.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w7-d3-e1-g3",
+                  "percent": 77.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w7-d3-e2-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w7-d3-e3-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w7-d3-e3-g2",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w7-d3-e3-g3",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w7-d3-e4-g1",
+                  "percent": 46.0,
+                  "reps": 12,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w7-d3-e5-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w7-d3-e5-g2",
+                  "percent": 59.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w7-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w7-d3-e6-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-8",
+      "label": "Неделя 8",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w8-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w8-d1-e1-g1",
+                  "percent": 44.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d1-e1-g2",
+                  "percent": 52.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w8-d1-e2-g1",
+                  "percent": 43.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d1-e2-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w8-d1-e3-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d1-e3-g2",
+                  "percent": 52.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w8-d1-e4-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d1-e4-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w8-d1-e5-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w8-d1-e6-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d1-e6-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w8-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w8-d2-e1-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d2-e1-g2",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w8-d2-e2-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d2-e2-g2",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d2-e2-g3",
+                  "percent": 73.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w8-d2-e3-g1",
+                  "percent": 42.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w8-d2-e4-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w8-d2-e5-g1",
+                  "percent": 49.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d2-e5-g2",
+                  "percent": 57.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w8-d2-e6-g1",
+                  "percent": 49.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d2-e6-g2",
+                  "percent": 62.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w8-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w8-d3-e1-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d3-e1-g2",
+                  "percent": 55.0,
+                  "reps": 15,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w8-d3-e2-g1",
+                  "percent": 30.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w8-d3-e3-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d3-e3-g2",
+                  "percent": 58.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w8-d3-e4-g1",
+                  "percent": 47.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w8-d3-e4-g2",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w8-d3-e5-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w8-d3-e5-g2",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w8-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w8-d3-e6-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w8-d3-e6-g2",
+                  "percent": 52.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-9",
+      "label": "Неделя 9",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w9-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w9-d1-e1-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d1-e1-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d1-e1-g3",
+                  "percent": 64.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w9-d1-e2-g1",
+                  "percent": 39.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w9-d1-e3-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d1-e3-g2",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w9-d1-e4-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d1-e4-g2",
+                  "percent": 65.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w9-d1-e5-g1",
+                  "percent": 49.0,
+                  "reps": 10,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w9-d1-e6-g1",
+                  "percent": 52.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w9-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w9-d2-e1-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d2-e1-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d2-e1-g3",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d2-e1-g4",
+                  "percent": 70.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w9-d2-e2-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d2-e2-g2",
+                  "percent": 54.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w9-d2-e3-g1",
+                  "percent": 39.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w9-d2-e4-g1",
+                  "percent": 37.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w9-d2-e5-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d2-e5-g2",
+                  "percent": 53.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w9-d2-e6-g1",
+                  "percent": 43.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d2-e6-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w9-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w9-d3-e1-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d3-e1-g2",
+                  "percent": 52.0,
+                  "reps": 10,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w9-d3-e2-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w9-d3-e3-g1",
+                  "percent": 40.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w9-d3-e4-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w9-d3-e4-g2",
+                  "percent": 60.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d3-e4-g3",
+                  "percent": 70.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w9-d3-e5-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w9-d3-e5-g2",
+                  "percent": 65.0,
+                  "reps": 8,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w9-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w9-d3-e6-g1",
+                  "percent": 39.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-10",
+      "label": "Неделя 10",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w10-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w10-d1-e1-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d1-e1-g2",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d1-e1-g3",
+                  "percent": 70.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w10-d1-e2-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w10-d1-e3-g1",
+                  "percent": 52.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w10-d1-e4-g1",
+                  "percent": 57.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d1-e4-g2",
+                  "percent": 68.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w10-d1-e5-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d1-e5-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d1-e5-g3",
+                  "percent": 67.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w10-d1-e6-g1",
+                  "percent": 58.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w10-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w10-d2-e1-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 3
+                },
+                {
+                  "id": "group-w10-d2-e1-g2",
+                  "percent": 58.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d2-e1-g3",
+                  "percent": 63.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w10-d2-e2-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d2-e2-g2",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d2-e2-g3",
+                  "percent": 71.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w10-d2-e3-g1",
+                  "percent": 42.0,
+                  "reps": 12,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w10-d2-e4-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d2-e4-g2",
+                  "percent": 52.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w10-d2-e5-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d2-e5-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d2-e5-g3",
+                  "percent": 66.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w10-d2-e6-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d2-e6-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w10-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w10-d3-e1-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d3-e1-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d3-e1-g3",
+                  "percent": 63.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w10-d3-e2-g1",
+                  "percent": 30.0,
+                  "reps": 12,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w10-d3-e3-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d3-e3-g2",
+                  "percent": 56.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w10-d3-e4-g1",
+                  "percent": 52.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d3-e4-g2",
+                  "percent": 63.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w10-d3-e5-g1",
+                  "percent": 52.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w10-d3-e5-g2",
+                  "percent": 62.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w10-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w10-d3-e6-g1",
+                  "percent": 45.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-11",
+      "label": "Неделя 11",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w11-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w11-d1-e1-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w11-d1-e1-g2",
+                  "percent": 56.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w11-d1-e2-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w11-d1-e3-g1",
+                  "percent": 35.0,
+                  "reps": 10,
+                  "sets": 5
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w11-d1-e4-g1",
+                  "percent": 52.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d1-e4-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d1-e4-g3",
+                  "percent": 64.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w11-d1-e5-g1",
+                  "percent": 45.0,
+                  "reps": 10,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w11-d1-e5-g2",
+                  "percent": 58.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w11-d1-e6-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w11-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w11-d2-e1-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d2-e1-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d2-e1-g3",
+                  "percent": 62.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w11-d2-e2-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d2-e2-g2",
+                  "percent": 57.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w11-d2-e3-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w11-d2-e4-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w11-d2-e4-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w11-d2-e5-g1",
+                  "percent": 55.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w11-d2-e6-g1",
+                  "percent": 60.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w11-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w11-d3-e1-g1",
+                  "percent": 48.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d3-e1-g2",
+                  "percent": 57.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d3-e1-g3",
+                  "percent": 67.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w11-d3-e2-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w11-d3-e3-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d3-e3-g2",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w11-d3-e4-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d3-e4-g2",
+                  "percent": 49.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d3-e4-g3",
+                  "percent": 53.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w11-d3-e5-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 2
+                },
+                {
+                  "id": "group-w11-d3-e5-g2",
+                  "percent": 57.0,
+                  "reps": 15,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w11-d3-e5-g3",
+                  "percent": 63.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w11-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w11-d3-e6-g1",
+                  "percent": 55.0,
+                  "reps": 8,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "week-12",
+      "label": "Неделя 12",
+      "isDeload": false,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "entries": [
+            {
+              "id": "entry-w12-d1-e1",
+              "exerciseId": "ex-01",
+              "groups": [
+                {
+                  "id": "group-w12-d1-e1-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d1-e1-g2",
+                  "percent": 47.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d1-e2",
+              "exerciseId": "ex-02",
+              "groups": [
+                {
+                  "id": "group-w12-d1-e2-g1",
+                  "percent": 35.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d1-e3",
+              "exerciseId": "ex-03",
+              "groups": [
+                {
+                  "id": "group-w12-d1-e3-g1",
+                  "percent": 39.0,
+                  "reps": 10,
+                  "sets": 6
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d1-e4",
+              "exerciseId": "ex-04",
+              "groups": [
+                {
+                  "id": "group-w12-d1-e4-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d1-e4-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d1-e5",
+              "exerciseId": "ex-05",
+              "groups": [
+                {
+                  "id": "group-w12-d1-e5-g1",
+                  "percent": 53.0,
+                  "reps": 20,
+                  "sets": 1
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d1-e6",
+              "exerciseId": "ex-06",
+              "groups": [
+                {
+                  "id": "group-w12-d1-e6-g1",
+                  "percent": 34.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "entries": [
+            {
+              "id": "entry-w12-d2-e1",
+              "exerciseId": "ex-07",
+              "groups": [
+                {
+                  "id": "group-w12-d2-e1-g1",
+                  "percent": 47.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d2-e1-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 4
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d2-e2",
+              "exerciseId": "ex-08",
+              "groups": [
+                {
+                  "id": "group-w12-d2-e2-g1",
+                  "percent": 50.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d2-e2-g2",
+                  "percent": 59.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d2-e3",
+              "exerciseId": "ex-09",
+              "groups": [
+                {
+                  "id": "group-w12-d2-e3-g1",
+                  "percent": 39.0,
+                  "reps": 10,
+                  "sets": 6
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d2-e4",
+              "exerciseId": "ex-10",
+              "groups": [
+                {
+                  "id": "group-w12-d2-e4-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d2-e4-g2",
+                  "percent": 58.0,
+                  "reps": 10,
+                  "sets": 2
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d2-e5",
+              "exerciseId": "ex-11",
+              "groups": [
+                {
+                  "id": "group-w12-d2-e5-g1",
+                  "percent": 47.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d2-e6",
+              "exerciseId": "ex-12",
+              "groups": [
+                {
+                  "id": "group-w12-d2-e6-g1",
+                  "percent": 50.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "entries": [
+            {
+              "id": "entry-w12-d3-e1",
+              "exerciseId": "ex-13",
+              "groups": [
+                {
+                  "id": "group-w12-d3-e1-g1",
+                  "percent": 50.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d3-e1-g2",
+                  "percent": 60.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d3-e1-g3",
+                  "percent": 70.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d3-e2",
+              "exerciseId": "ex-14",
+              "groups": [
+                {
+                  "id": "group-w12-d3-e2-g1",
+                  "percent": 40.0,
+                  "reps": 12,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d3-e3",
+              "exerciseId": "ex-15",
+              "groups": [
+                {
+                  "id": "group-w12-d3-e3-g1",
+                  "percent": 45.0,
+                  "reps": 12,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d3-e3-g2",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d3-e4",
+              "exerciseId": "ex-16",
+              "groups": [
+                {
+                  "id": "group-w12-d3-e4-g1",
+                  "percent": 48.0,
+                  "reps": 10,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d3-e5",
+              "exerciseId": "ex-17",
+              "groups": [
+                {
+                  "id": "group-w12-d3-e5-g1",
+                  "percent": 55.0,
+                  "reps": 10,
+                  "sets": 1
+                },
+                {
+                  "id": "group-w12-d3-e5-g2",
+                  "percent": 63.0,
+                  "reps": 8,
+                  "sets": 3
+                }
+              ]
+            },
+            {
+              "id": "entry-w12-d3-e6",
+              "exerciseId": "ex-18",
+              "groups": [
+                {
+                  "id": "group-w12-d3-e6-g1",
+                  "percent": 30.0,
+                  "reps": 12,
+                  "sets": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "progression": {
+    "mode": "compound",
+    "stepPercent": 1,
+    "deload": {
+      "mode": "hold",
+      "reductionPercent": 10
+    }
+  },
+  "metrics": {
+    "funtikovTable": [
+      0.0,
+      0.0,
+      0.001,
+      0.002,
+      0.003,
+      0.004,
+      0.005,
+      0.006,
+      0.007,
+      0.008,
+      0.009,
+      0.01,
+      0.011,
+      0.012,
+      0.015,
+      0.018,
+      0.021,
+      0.024,
+      0.027,
+      0.03,
+      0.03,
+      0.04,
+      0.05,
+      0.06,
+      0.07,
+      0.08,
+      0.09,
+      0.1,
+      0.11,
+      0.12,
+      0.13,
+      0.14,
+      0.16,
+      0.18,
+      0.2,
+      0.22,
+      0.24,
+      0.26,
+      0.28,
+      0.3,
+      0.32,
+      0.34,
+      0.36,
+      0.38,
+      0.4,
+      0.42,
+      0.44,
+      0.46,
+      0.47,
+      0.48,
+      0.5,
+      0.51,
+      0.53,
+      0.54,
+      0.56,
+      0.58,
+      0.6,
+      0.62,
+      0.65,
+      0.68,
+      0.7,
+      0.71,
+      0.73,
+      0.75,
+      0.78,
+      0.8,
+      0.82,
+      0.84,
+      0.87,
+      0.89,
+      0.9,
+      0.95,
+      1.0,
+      1.07,
+      1.14,
+      1.2,
+      1.27,
+      1.34,
+      1.4,
+      1.47,
+      1.53,
+      1.6,
+      1.67,
+      1.74,
+      1.82,
+      1.9,
+      2.05,
+      2.2,
+      2.4,
+      2.6,
+      2.8,
+      3.0,
+      3.2,
+      3.6,
+      4.0,
+      4.5,
+      5.0,
+      7.5,
+      12.0,
+      18.0,
+      25.0
+    ],
+    "timeThresholds": [
+      {
+        "belowPercent": 45,
+        "factor": 0.5
+      },
+      {
+        "belowPercent": 55,
+        "factor": 0.8
+      },
+      {
+        "belowPercent": 65,
+        "factor": 0.9
+      },
+      {
+        "belowPercent": 75,
+        "factor": 1.0
+      },
+      {
+        "belowPercent": 85,
+        "factor": 1.1
+      }
+    ],
+    "timeFallbackFactor": 1.2,
+    "impactHeavyThreshold": 0.8,
+    "impactLightThreshold": 0.4,
+    "impactHeavyFactor": 6.0,
+    "impactMediumFactor": 3.0,
+    "impactLightFactor": 1.5
+  }
+}
