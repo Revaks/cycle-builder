@@ -1,0 +1,52 @@
+import { describe, expect, it } from 'vitest';
+import { calculateCycle } from '../../src/domain/calculate';
+import { createSeedProject } from '../../src/domain/seed';
+
+const project = createSeedProject();
+const cycle = calculateCycle(project);
+const week1 = cycle.weeks[0];
+const monday = week1.days[0];
+const press = monday.entries[0];
+
+describe('calculateCycle', () => {
+  it('считает строку Жим стоя недели 1', () => {
+    expect(press.groups.map((g) => g.weight)).toEqual([32.5, 42.5, 50]);
+    expect(press.tonnage).toBe(2040);
+    expect(press.kpsh).toBe(48);
+    expect(press.timeMinutes).toBeCloseTo(23.4, 10);
+    expect(press.funtikov).toBeCloseTo(972.7, 10);
+    expect(press.avgWeight).toBeCloseTo(42.5, 10);
+    expect(press.relativeIntensity).toBeCloseTo(0.4722, 4);
+  });
+
+  it('считает итоги недели 1', () => {
+    expect(week1.tonnage).toBe(39304);
+    expect(week1.kpsh).toBe(818);
+    expect(week1.funtikov).toBeCloseTo(17762.032, 3);
+    expect(week1.timeMinutes).toBe(278);
+  });
+
+  it('добавляет 30 минут к непустому дню и округляет вниз', () => {
+    expect(week1.days.map((d) => d.timeMinutes)).toEqual([101, 91, 86]);
+  });
+
+  it('не падает без 1ПМ и считает КПШ/время', () => {
+    const broken = createSeedProject();
+    broken.exercises[0].oneRM = null;
+    const result = calculateCycle(broken).weeks[0].days[0].entries[0];
+    expect(result.hasMissingOneRM).toBe(true);
+    expect(result.groups[0].weight).toBeNull();
+    expect(result.tonnage).toBe(0);
+    expect(result.kpsh).toBe(48);
+    expect(result.timeMinutes).toBeCloseTo(23.4, 10);
+  });
+
+  it('считает упражнение с нулевым весом', () => {
+    const bodyweight = createSeedProject();
+    bodyweight.weeks[0].days[0].entries[0].groups.forEach((g) => (g.percent = 0));
+    const result = calculateCycle(bodyweight).weeks[0].days[0].entries[0];
+    expect(result.groups.every((g) => g.weight === 0)).toBe(true);
+    expect(result.tonnage).toBe(0);
+    expect(result.kpsh).toBe(48);
+  });
+});

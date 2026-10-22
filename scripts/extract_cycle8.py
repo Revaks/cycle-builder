@@ -137,6 +137,14 @@ def main() -> None:
                         'groups': groups,
                     }
                 )
+                avg_weight = number(ws.cell(row, 23).value)
+                row_one_rm = optional_number(ws.cell(row, 25).value)
+                row_multiplier = number(ws.cell(row, 5).value, 1.0)
+                relative_intensity = (
+                    rounded(avg_weight / (row_one_rm * row_multiplier))
+                    if row_one_rm and row_multiplier > 0
+                    else None
+                )
                 expected_entries.append(
                     {
                         'entryId': entry_id,
@@ -145,8 +153,8 @@ def main() -> None:
                         'kpsh': rounded(number(ws.cell(row, 27).value)),
                         'funtikov': rounded(number(ws.cell(row, 26).value)),
                         'timeMinutes': rounded(as_minutes(ws.cell(row, 28).value)),
-                        'avgWeight': rounded(number(ws.cell(row, 23).value)),
-                        'relativeIntensity': rounded(number(ws.cell(row, 24).value)),
+                        'avgWeight': rounded(avg_weight),
+                        'relativeIntensity': relative_intensity,
                     }
                 )
                 entry_count += 1
