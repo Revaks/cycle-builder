@@ -1,0 +1,3940 @@
+{
+  "weeks": [
+    {
+      "weekId": "week-1",
+      "tonnage": 39304.0,
+      "kpsh": 818.0,
+      "funtikov": 17762.032,
+      "timeMinutes": 278.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 13498.0,
+          "kpsh": 266.0,
+          "funtikov": 6747.652,
+          "timeMinutes": 101.0,
+          "entries": [
+            {
+              "entryId": "entry-w1-d1-e1",
+              "groups": [
+                {
+                  "weight": 32.5
+                },
+                {
+                  "weight": 42.5
+                },
+                {
+                  "weight": 50.0
+                }
+              ],
+              "tonnage": 2040.0,
+              "kpsh": 48.0,
+              "funtikov": 972.7,
+              "timeMinutes": 23.4,
+              "avgWeight": 42.5,
+              "relativeIntensity": 0.472222
+            },
+            {
+              "entryId": "entry-w1-d1-e2",
+              "groups": [
+                {
+                  "weight": 14.0
+                }
+              ],
+              "tonnage": 1008.0,
+              "kpsh": 36.0,
+              "funtikov": 114.912,
+              "timeMinutes": 2.25,
+              "avgWeight": 28.0,
+              "relativeIntensity": 0.4
+            },
+            {
+              "entryId": "entry-w1-d1-e3",
+              "groups": [
+                {
+                  "weight": 10.0
+                },
+                {
+                  "weight": 11.0
+                }
+              ],
+              "tonnage": 900.0,
+              "kpsh": 42.0,
+              "funtikov": 126.36,
+              "timeMinutes": 4.35,
+              "avgWeight": 21.428571,
+              "relativeIntensity": 0.487013
+            },
+            {
+              "entryId": "entry-w1-d1-e4",
+              "groups": [
+                {
+                  "weight": 72.5
+                },
+                {
+                  "weight": 107.5
+                }
+              ],
+              "tonnage": 5170.0,
+              "kpsh": 52.0,
+              "funtikov": 4008.72,
+              "timeMinutes": 24.6,
+              "avgWeight": 99.423077,
+              "relativeIntensity": 0.55235
+            },
+            {
+              "entryId": "entry-w1-d1-e5",
+              "groups": [
+                {
+                  "weight": 60.0
+                }
+              ],
+              "tonnage": 2400.0,
+              "kpsh": 40.0,
+              "funtikov": 1094.4,
+              "timeMinutes": 12.0,
+              "avgWeight": 60.0,
+              "relativeIntensity": 0.413793
+            },
+            {
+              "entryId": "entry-w1-d1-e6",
+              "groups": [
+                {
+                  "weight": 6.0
+                },
+                {
+                  "weight": 9.0
+                }
+              ],
+              "tonnage": 1980.0,
+              "kpsh": 48.0,
+              "funtikov": 430.56,
+              "timeMinutes": 4.8,
+              "avgWeight": 41.25,
+              "relativeIntensity": 0.515625
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 10893.0,
+          "kpsh": 274.0,
+          "funtikov": 5175.034,
+          "timeMinutes": 91.0,
+          "entries": [
+            {
+              "entryId": "entry-w1-d2-e1",
+              "groups": [
+                {
+                  "weight": 55.0
+                },
+                {
+                  "weight": 85.0
+                }
+              ],
+              "tonnage": 4060.0,
+              "kpsh": 52.0,
+              "funtikov": 2630.8,
+              "timeMinutes": 24.6,
+              "avgWeight": 78.076923,
+              "relativeIntensity": 0.557692
+            },
+            {
+              "entryId": "entry-w1-d2-e2",
+              "groups": [
+                {
+                  "weight": 57.5
+                },
+                {
+                  "weight": 77.5
+                }
+              ],
+              "tonnage": 3015.0,
+              "kpsh": 42.0,
+              "funtikov": 2021.55,
+              "timeMinutes": 21.0,
+              "avgWeight": 71.785714,
+              "relativeIntensity": 0.574286
+            },
+            {
+              "entryId": "entry-w1-d2-e3",
+              "groups": [
+                {
+                  "weight": 3.5
+                }
+              ],
+              "tonnage": 672.0,
+              "kpsh": 48.0,
+              "funtikov": 56.448,
+              "timeMinutes": 3.0,
+              "avgWeight": 14.0,
+              "relativeIntensity": 0.35
+            },
+            {
+              "entryId": "entry-w1-d2-e4",
+              "groups": [
+                {
+                  "weight": 22.5
+                },
+                {
+                  "weight": 30.0
+                }
+              ],
+              "tonnage": 1170.0,
+              "kpsh": 42.0,
+              "funtikov": 187.38,
+              "timeMinutes": 4.8,
+              "avgWeight": 27.857143,
+              "relativeIntensity": 0.506494
+            },
+            {
+              "entryId": "entry-w1-d2-e5",
+              "groups": [
+                {
+                  "weight": 9.0
+                },
+                {
+                  "weight": 12.0
+                },
+                {
+                  "weight": 14.0
+                }
+              ],
+              "tonnage": 1016.0,
+              "kpsh": 42.0,
+              "funtikov": 227.016,
+              "timeMinutes": 5.55,
+              "avgWeight": 24.190476,
+              "relativeIntensity": 0.604762
+            },
+            {
+              "entryId": "entry-w1-d2-e6",
+              "groups": [
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 960.0,
+              "kpsh": 48.0,
+              "funtikov": 51.84,
+              "timeMinutes": 3.0,
+              "avgWeight": 20.0,
+              "relativeIntensity": 0.333333
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 14913.0,
+          "kpsh": 278.0,
+          "funtikov": 5839.346,
+          "timeMinutes": 86.0,
+          "entries": [
+            {
+              "entryId": "entry-w1-d3-e1",
+              "groups": [
+                {
+                  "weight": 90.0
+                },
+                {
+                  "weight": 112.5
+                }
+              ],
+              "tonnage": 4455.0,
+              "kpsh": 42.0,
+              "funtikov": 3292.38,
+              "timeMinutes": 21.0,
+              "avgWeight": 106.071429,
+              "relativeIntensity": 0.530357
+            },
+            {
+              "entryId": "entry-w1-d3-e2",
+              "groups": [
+                {
+                  "weight": 52.5
+                }
+              ],
+              "tonnage": 2520.0,
+              "kpsh": 48.0,
+              "funtikov": 957.6,
+              "timeMinutes": 12.0,
+              "avgWeight": 52.5,
+              "relativeIntensity": 0.403846
+            },
+            {
+              "entryId": "entry-w1-d3-e3",
+              "groups": [
+                {
+                  "weight": 25.0
+                },
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 2850.0,
+              "kpsh": 42.0,
+              "funtikov": 680.25,
+              "timeMinutes": 8.7,
+              "avgWeight": 67.857143,
+              "relativeIntensity": 0.484694
+            },
+            {
+              "entryId": "entry-w1-d3-e4",
+              "groups": [
+                {
+                  "weight": 8.0
+                }
+              ],
+              "tonnage": 1920.0,
+              "kpsh": 48.0,
+              "funtikov": 138.24,
+              "timeMinutes": 3.0,
+              "avgWeight": 40.0,
+              "relativeIntensity": 0.32
+            },
+            {
+              "entryId": "entry-w1-d3-e5",
+              "groups": [
+                {
+                  "weight": 27.5
+                },
+                {
+                  "weight": 32.5
+                },
+                {
+                  "weight": 40.0
+                }
+              ],
+              "tonnage": 1800.0,
+              "kpsh": 50.0,
+              "funtikov": 511.1,
+              "timeMinutes": 7.05,
+              "avgWeight": 36.0,
+              "relativeIntensity": 0.6
+            },
+            {
+              "entryId": "entry-w1-d3-e6",
+              "groups": [
+                {
+                  "weight": 12.0
+                },
+                {
+                  "weight": 15.0
+                }
+              ],
+              "tonnage": 1368.0,
+              "kpsh": 48.0,
+              "funtikov": 259.776,
+              "timeMinutes": 4.35,
+              "avgWeight": 28.5,
+              "relativeIntensity": 0.475
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-2",
+      "tonnage": 39439.5,
+      "kpsh": 779.0,
+      "funtikov": 18102.83,
+      "timeMinutes": 281.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 12967.0,
+          "kpsh": 262.0,
+          "funtikov": 6284.24,
+          "timeMinutes": 97.0,
+          "entries": [
+            {
+              "entryId": "entry-w2-d1-e1",
+              "groups": [
+                {
+                  "weight": 37.5
+                },
+                {
+                  "weight": 60.0
+                }
+              ],
+              "tonnage": 1815.0,
+              "kpsh": 34.0,
+              "funtikov": 1294.5,
+              "timeMinutes": 21.0,
+              "avgWeight": 53.382353,
+              "relativeIntensity": 0.587265
+            },
+            {
+              "entryId": "entry-w2-d1-e2",
+              "groups": [
+                {
+                  "weight": 18.0
+                },
+                {
+                  "weight": 21.0
+                }
+              ],
+              "tonnage": 1692.0,
+              "kpsh": 42.0,
+              "funtikov": 310.5,
+              "timeMinutes": 5.25,
+              "avgWeight": 40.285714,
+              "relativeIntensity": 0.569812
+            },
+            {
+              "entryId": "entry-w2-d1-e3",
+              "groups": [
+                {
+                  "weight": 8.0
+                }
+              ],
+              "tonnage": 800.0,
+              "kpsh": 50.0,
+              "funtikov": 67.2,
+              "timeMinutes": 3.75,
+              "avgWeight": 16.0,
+              "relativeIntensity": 0.360036
+            },
+            {
+              "entryId": "entry-w2-d1-e4",
+              "groups": [
+                {
+                  "weight": 90.0
+                },
+                {
+                  "weight": 115.0
+                },
+                {
+                  "weight": 132.5
+                }
+              ],
+              "tonnage": 3110.0,
+              "kpsh": 28.0,
+              "funtikov": 2936.04,
+              "timeMinutes": 16.2,
+              "avgWeight": 111.071429,
+              "relativeIntensity": 0.610954
+            },
+            {
+              "entryId": "entry-w2-d1-e5",
+              "groups": [
+                {
+                  "weight": 55.0
+                }
+              ],
+              "tonnage": 2750.0,
+              "kpsh": 50.0,
+              "funtikov": 924.0,
+              "timeMinutes": 15.0,
+              "avgWeight": 55.0,
+              "relativeIntensity": 0.375555
+            },
+            {
+              "entryId": "entry-w2-d1-e6",
+              "groups": [
+                {
+                  "weight": 8.0
+                },
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 2800.0,
+              "kpsh": 58.0,
+              "funtikov": 752.0,
+              "timeMinutes": 6.6,
+              "avgWeight": 48.275862,
+              "relativeIntensity": 0.597474
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 10485.0,
+          "kpsh": 260.0,
+          "funtikov": 5324.9,
+          "timeMinutes": 97.0,
+          "entries": [
+            {
+              "entryId": "entry-w2-d2-e1",
+              "groups": [
+                {
+                  "weight": 70.0
+                },
+                {
+                  "weight": 92.5
+                }
+              ],
+              "tonnage": 3660.0,
+              "kpsh": 42.0,
+              "funtikov": 2718.0,
+              "timeMinutes": 28.8,
+              "avgWeight": 87.142857,
+              "relativeIntensity": 0.616286
+            },
+            {
+              "entryId": "entry-w2-d2-e2",
+              "groups": [
+                {
+                  "weight": 62.5
+                },
+                {
+                  "weight": 85.0
+                }
+              ],
+              "tonnage": 2665.0,
+              "kpsh": 34.0,
+              "funtikov": 2026.1,
+              "timeMinutes": 22.8,
+              "avgWeight": 78.382353,
+              "relativeIntensity": 0.62085
+            },
+            {
+              "entryId": "entry-w2-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.0
+                }
+              ],
+              "tonnage": 768.0,
+              "kpsh": 48.0,
+              "funtikov": 87.552,
+              "timeMinutes": 3.0,
+              "avgWeight": 16.0,
+              "relativeIntensity": 0.39604
+            },
+            {
+              "entryId": "entry-w2-d2-e4",
+              "groups": [
+                {
+                  "weight": 22.5
+                },
+                {
+                  "weight": 27.5
+                }
+              ],
+              "tonnage": 1260.0,
+              "kpsh": 48.0,
+              "funtikov": 179.28,
+              "timeMinutes": 4.35,
+              "avgWeight": 26.25,
+              "relativeIntensity": 0.472547
+            },
+            {
+              "entryId": "entry-w2-d2-e5",
+              "groups": [
+                {
+                  "weight": 10.0
+                },
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 980.0,
+              "kpsh": 40.0,
+              "funtikov": 217.2,
+              "timeMinutes": 5.7,
+              "avgWeight": 24.5,
+              "relativeIntensity": 0.606436
+            },
+            {
+              "entryId": "entry-w2-d2-e6",
+              "groups": [
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 1152.0,
+              "kpsh": 48.0,
+              "funtikov": 96.768,
+              "timeMinutes": 3.0,
+              "avgWeight": 24.0,
+              "relativeIntensity": 0.39604
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 15987.5,
+          "kpsh": 257.0,
+          "funtikov": 6493.69,
+          "timeMinutes": 87.0,
+          "entries": [
+            {
+              "entryId": "entry-w2-d3-e1",
+              "groups": [
+                {
+                  "weight": 100.0
+                }
+              ],
+              "tonnage": 6000.0,
+              "kpsh": 60.0,
+              "funtikov": 3900.0,
+              "timeMinutes": 24.0,
+              "avgWeight": 100.0,
+              "relativeIntensity": 0.49505
+            },
+            {
+              "entryId": "entry-w2-d3-e2",
+              "groups": [
+                {
+                  "weight": 45.0
+                },
+                {
+                  "weight": 52.5
+                }
+              ],
+              "tonnage": 1867.5,
+              "kpsh": 39.0,
+              "funtikov": 601.65,
+              "timeMinutes": 9.0,
+              "avgWeight": 47.884615,
+              "relativeIntensity": 0.364696
+            },
+            {
+              "entryId": "entry-w2-d3-e3",
+              "groups": [
+                {
+                  "weight": 27.5
+                },
+                {
+                  "weight": 40.0
+                }
+              ],
+              "tonnage": 3060.0,
+              "kpsh": 42.0,
+              "funtikov": 821.4,
+              "timeMinutes": 9.6,
+              "avgWeight": 72.857143,
+              "relativeIntensity": 0.515256
+            },
+            {
+              "entryId": "entry-w2-d3-e4",
+              "groups": [
+                {
+                  "weight": 10.0
+                },
+                {
+                  "weight": 14.0
+                }
+              ],
+              "tonnage": 2400.0,
+              "kpsh": 40.0,
+              "funtikov": 476.8,
+              "timeMinutes": 4.2,
+              "avgWeight": 60.0,
+              "relativeIntensity": 0.475248
+            },
+            {
+              "entryId": "entry-w2-d3-e5",
+              "groups": [
+                {
+                  "weight": 30.0
+                },
+                {
+                  "weight": 37.5
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 1280.0,
+              "kpsh": 34.0,
+              "funtikov": 385.2,
+              "timeMinutes": 5.55,
+              "avgWeight": 37.647059,
+              "relativeIntensity": 0.621239
+            },
+            {
+              "entryId": "entry-w2-d3-e6",
+              "groups": [
+                {
+                  "weight": 15.0
+                },
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 1380.0,
+              "kpsh": 42.0,
+              "funtikov": 308.64,
+              "timeMinutes": 5.25,
+              "avgWeight": 32.857143,
+              "relativeIntensity": 0.542197
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-3",
+      "tonnage": 40645.5,
+      "kpsh": 737.0,
+      "funtikov": 21355.693,
+      "timeMinutes": 293.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 13123.5,
+          "kpsh": 239.0,
+          "funtikov": 7194.004,
+          "timeMinutes": 101.0,
+          "entries": [
+            {
+              "entryId": "entry-w3-d1-e1",
+              "groups": [
+                {
+                  "weight": 32.5
+                },
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 1237.5,
+              "kpsh": 35.0,
+              "funtikov": 421.5,
+              "timeMinutes": 6.0,
+              "avgWeight": 35.357143,
+              "relativeIntensity": 0.385116
+            },
+            {
+              "entryId": "entry-w3-d1-e2",
+              "groups": [
+                {
+                  "weight": 16.0
+                },
+                {
+                  "weight": 21.0
+                }
+              ],
+              "tonnage": 1896.0,
+              "kpsh": 48.0,
+              "funtikov": 371.664,
+              "timeMinutes": 5.25,
+              "avgWeight": 39.5,
+              "relativeIntensity": 0.553167
+            },
+            {
+              "entryId": "entry-w3-d1-e3",
+              "groups": [
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 960.0,
+              "kpsh": 40.0,
+              "funtikov": 155.52,
+              "timeMinutes": 4.8,
+              "avgWeight": 24.0,
+              "relativeIntensity": 0.534707
+            },
+            {
+              "entryId": "entry-w3-d1-e4",
+              "groups": [
+                {
+                  "weight": 100.0
+                },
+                {
+                  "weight": 120.0
+                }
+              ],
+              "tonnage": 4840.0,
+              "kpsh": 42.0,
+              "funtikov": 4382.4,
+              "timeMinutes": 29.4,
+              "avgWeight": 115.238095,
+              "relativeIntensity": 0.627597
+            },
+            {
+              "entryId": "entry-w3-d1-e5",
+              "groups": [
+                {
+                  "weight": 75.0
+                }
+              ],
+              "tonnage": 2400.0,
+              "kpsh": 32.0,
+              "funtikov": 1440.0,
+              "timeMinutes": 19.2,
+              "avgWeight": 75.0,
+              "relativeIntensity": 0.50705
+            },
+            {
+              "entryId": "entry-w3-d1-e6",
+              "groups": [
+                {
+                  "weight": 7.0
+                },
+                {
+                  "weight": 9.0
+                }
+              ],
+              "tonnage": 1790.0,
+              "kpsh": 42.0,
+              "funtikov": 422.92,
+              "timeMinutes": 6.6,
+              "avgWeight": 42.619048,
+              "relativeIntensity": 0.522241
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 10409.0,
+          "kpsh": 238.0,
+          "funtikov": 5754.918,
+          "timeMinutes": 95.0,
+          "entries": [
+            {
+              "entryId": "entry-w3-d2-e1",
+              "groups": [
+                {
+                  "weight": 77.5
+                },
+                {
+                  "weight": 100.0
+                }
+              ],
+              "tonnage": 3975.0,
+              "kpsh": 42.0,
+              "funtikov": 3329.5,
+              "timeMinutes": 29.4,
+              "avgWeight": 94.642857,
+              "relativeIntensity": 0.6627
+            },
+            {
+              "entryId": "entry-w3-d2-e2",
+              "groups": [
+                {
+                  "weight": 70.0
+                },
+                {
+                  "weight": 80.0
+                },
+                {
+                  "weight": 92.5
+                }
+              ],
+              "tonnage": 2240.0,
+              "kpsh": 28.0,
+              "funtikov": 1730.0,
+              "timeMinutes": 16.8,
+              "avgWeight": 80.0,
+              "relativeIntensity": 0.627389
+            },
+            {
+              "entryId": "entry-w3-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.6
+                }
+              ],
+              "tonnage": 736.0,
+              "kpsh": 40.0,
+              "funtikov": 103.776,
+              "timeMinutes": 4.8,
+              "avgWeight": 18.4,
+              "relativeIntensity": 0.450936
+            },
+            {
+              "entryId": "entry-w3-d2-e4",
+              "groups": [
+                {
+                  "weight": 25.0
+                },
+                {
+                  "weight": 30.0
+                }
+              ],
+              "tonnage": 1150.0,
+              "kpsh": 40.0,
+              "funtikov": 191.85,
+              "timeMinutes": 5.25,
+              "avgWeight": 28.75,
+              "relativeIntensity": 0.512427
+            },
+            {
+              "entryId": "entry-w3-d2-e5",
+              "groups": [
+                {
+                  "weight": 11.0
+                },
+                {
+                  "weight": 14.0
+                }
+              ],
+              "tonnage": 1060.0,
+              "kpsh": 40.0,
+              "funtikov": 257.52,
+              "timeMinutes": 5.85,
+              "avgWeight": 26.5,
+              "relativeIntensity": 0.649446
+            },
+            {
+              "entryId": "entry-w3-d2-e6",
+              "groups": [
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 1248.0,
+              "kpsh": 48.0,
+              "funtikov": 142.272,
+              "timeMinutes": 3.0,
+              "avgWeight": 26.0,
+              "relativeIntensity": 0.424795
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 17113.0,
+          "kpsh": 260.0,
+          "funtikov": 8406.771,
+          "timeMinutes": 97.0,
+          "entries": [
+            {
+              "entryId": "entry-w3-d3-e1",
+              "groups": [
+                {
+                  "weight": 112.5
+                },
+                {
+                  "weight": 127.5
+                }
+              ],
+              "tonnage": 6675.0,
+              "kpsh": 58.0,
+              "funtikov": 5314.725,
+              "timeMinutes": 27.0,
+              "avgWeight": 115.086207,
+              "relativeIntensity": 0.564093
+            },
+            {
+              "entryId": "entry-w3-d3-e2",
+              "groups": [
+                {
+                  "weight": 52.5
+                }
+              ],
+              "tonnage": 2100.0,
+              "kpsh": 40.0,
+              "funtikov": 798.0,
+              "timeMinutes": 12.0,
+              "avgWeight": 52.5,
+              "relativeIntensity": 0.395889
+            },
+            {
+              "entryId": "entry-w3-d3-e3",
+              "groups": [
+                {
+                  "weight": 32.5
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 3370.0,
+              "kpsh": 42.0,
+              "funtikov": 1104.75,
+              "timeMinutes": 13.2,
+              "avgWeight": 80.238095,
+              "relativeIntensity": 0.561836
+            },
+            {
+              "entryId": "entry-w3-d3-e4",
+              "groups": [
+                {
+                  "weight": 11.0
+                }
+              ],
+              "tonnage": 1980.0,
+              "kpsh": 36.0,
+              "funtikov": 372.24,
+              "timeMinutes": 3.6,
+              "avgWeight": 55.0,
+              "relativeIntensity": 0.43133
+            },
+            {
+              "entryId": "entry-w3-d3-e5",
+              "groups": [
+                {
+                  "weight": 30.0
+                },
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 1500.0,
+              "kpsh": 42.0,
+              "funtikov": 420.0,
+              "timeMinutes": 6.6,
+              "avgWeight": 35.714286,
+              "relativeIntensity": 0.58351
+            },
+            {
+              "entryId": "entry-w3-d3-e6",
+              "groups": [
+                {
+                  "weight": 17.0
+                },
+                {
+                  "weight": 18.0
+                }
+              ],
+              "tonnage": 1488.0,
+              "kpsh": 42.0,
+              "funtikov": 397.056,
+              "timeMinutes": 5.4,
+              "avgWeight": 35.428571,
+              "relativeIntensity": 0.578841
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-4",
+      "tonnage": 36376.9,
+      "kpsh": 702.0,
+      "funtikov": 19877.089,
+      "timeMinutes": 257.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 12524.5,
+          "kpsh": 234.0,
+          "funtikov": 7770.273,
+          "timeMinutes": 91.0,
+          "entries": [
+            {
+              "entryId": "entry-w4-d1-e1",
+              "groups": [
+                {
+                  "weight": 37.5
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 1537.5,
+              "kpsh": 39.0,
+              "funtikov": 641.625,
+              "timeMinutes": 10.8,
+              "avgWeight": 39.423077,
+              "relativeIntensity": 0.425152
+            },
+            {
+              "entryId": "entry-w4-d1-e2",
+              "groups": [
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 936.0,
+              "kpsh": 36.0,
+              "funtikov": 78.624,
+              "timeMinutes": 2.25,
+              "avgWeight": 26.0,
+              "relativeIntensity": 0.360505
+            },
+            {
+              "entryId": "entry-w4-d1-e3",
+              "groups": [
+                {
+                  "weight": 8.0
+                }
+              ],
+              "tonnage": 576.0,
+              "kpsh": 36.0,
+              "funtikov": 48.384,
+              "timeMinutes": 2.25,
+              "avgWeight": 16.0,
+              "relativeIntensity": 0.352942
+            },
+            {
+              "entryId": "entry-w4-d1-e4",
+              "groups": [
+                {
+                  "weight": 82.5
+                },
+                {
+                  "weight": 107.5
+                }
+              ],
+              "tonnage": 4215.0,
+              "kpsh": 42.0,
+              "funtikov": 3073.86,
+              "timeMinutes": 21.0,
+              "avgWeight": 100.357143,
+              "relativeIntensity": 0.541143
+            },
+            {
+              "entryId": "entry-w4-d1-e5",
+              "groups": [
+                {
+                  "weight": 82.5
+                },
+                {
+                  "weight": 92.5
+                },
+                {
+                  "weight": 105.0
+                }
+              ],
+              "tonnage": 4015.0,
+              "kpsh": 42.0,
+              "funtikov": 3767.34,
+              "timeMinutes": 22.8,
+              "avgWeight": 95.595238,
+              "relativeIntensity": 0.639888
+            },
+            {
+              "entryId": "entry-w4-d1-e6",
+              "groups": [
+                {
+                  "weight": 6.0
+                },
+                {
+                  "weight": 7.0
+                }
+              ],
+              "tonnage": 1245.0,
+              "kpsh": 39.0,
+              "funtikov": 160.44,
+              "timeMinutes": 2.25,
+              "avgWeight": 31.923077,
+              "relativeIntensity": 0.387303
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 9042.4,
+          "kpsh": 236.0,
+          "funtikov": 4164.656,
+          "timeMinutes": 75.0,
+          "entries": [
+            {
+              "entryId": "entry-w4-d2-e1",
+              "groups": [
+                {
+                  "weight": 60.0
+                }
+              ],
+              "tonnage": 2880.0,
+              "kpsh": 48.0,
+              "funtikov": 1094.4,
+              "timeMinutes": 12.0,
+              "avgWeight": 60.0,
+              "relativeIntensity": 0.415967
+            },
+            {
+              "entryId": "entry-w4-d2-e2",
+              "groups": [
+                {
+                  "weight": 65.0
+                },
+                {
+                  "weight": 80.0
+                },
+                {
+                  "weight": 95.0
+                }
+              ],
+              "tonnage": 3100.0,
+              "kpsh": 38.0,
+              "funtikov": 2706.8,
+              "timeMinutes": 22.2,
+              "avgWeight": 81.578947,
+              "relativeIntensity": 0.633438
+            },
+            {
+              "entryId": "entry-w4-d2-e3",
+              "groups": [
+                {
+                  "weight": 5.2
+                }
+              ],
+              "tonnage": 998.4,
+              "kpsh": 48.0,
+              "funtikov": 149.76,
+              "timeMinutes": 4.8,
+              "avgWeight": 20.8,
+              "relativeIntensity": 0.504707
+            },
+            {
+              "entryId": "entry-w4-d2-e4",
+              "groups": [
+                {
+                  "weight": 20.0
+                }
+              ],
+              "tonnage": 720.0,
+              "kpsh": 36.0,
+              "funtikov": 60.48,
+              "timeMinutes": 2.25,
+              "avgWeight": 20.0,
+              "relativeIntensity": 0.352942
+            },
+            {
+              "entryId": "entry-w4-d2-e5",
+              "groups": [
+                {
+                  "weight": 8.0
+                }
+              ],
+              "tonnage": 480.0,
+              "kpsh": 30.0,
+              "funtikov": 54.72,
+              "timeMinutes": 2.25,
+              "avgWeight": 16.0,
+              "relativeIntensity": 0.388236
+            },
+            {
+              "entryId": "entry-w4-d2-e6",
+              "groups": [
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 864.0,
+              "kpsh": 36.0,
+              "funtikov": 98.496,
+              "timeMinutes": 2.25,
+              "avgWeight": 24.0,
+              "relativeIntensity": 0.388236
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 14810.0,
+          "kpsh": 232.0,
+          "funtikov": 7942.16,
+          "timeMinutes": 91.0,
+          "entries": [
+            {
+              "entryId": "entry-w4-d3-e1",
+              "groups": [
+                {
+                  "weight": 120.0
+                },
+                {
+                  "weight": 145.0
+                }
+              ],
+              "tonnage": 4680.0,
+              "kpsh": 34.0,
+              "funtikov": 5085.6,
+              "timeMinutes": 23.4,
+              "avgWeight": 137.647059,
+              "relativeIntensity": 0.667994
+            },
+            {
+              "entryId": "entry-w4-d3-e2",
+              "groups": [
+                {
+                  "weight": 60.0
+                }
+              ],
+              "tonnage": 1920.0,
+              "kpsh": 32.0,
+              "funtikov": 902.4,
+              "timeMinutes": 19.2,
+              "avgWeight": 60.0,
+              "relativeIntensity": 0.447965
+            },
+            {
+              "entryId": "entry-w4-d3-e3",
+              "groups": [
+                {
+                  "weight": 30.0
+                }
+              ],
+              "tonnage": 2880.0,
+              "kpsh": 48.0,
+              "funtikov": 547.2,
+              "timeMinutes": 6.0,
+              "avgWeight": 60.0,
+              "relativeIntensity": 0.415967
+            },
+            {
+              "entryId": "entry-w4-d3-e4",
+              "groups": [
+                {
+                  "weight": 13.0
+                },
+                {
+                  "weight": 15.0
+                },
+                {
+                  "weight": 19.0
+                }
+              ],
+              "tonnage": 3050.0,
+              "kpsh": 38.0,
+              "funtikov": 974.0,
+              "timeMinutes": 5.55,
+              "avgWeight": 80.263158,
+              "relativeIntensity": 0.623221
+            },
+            {
+              "entryId": "entry-w4-d3-e5",
+              "groups": [
+                {
+                  "weight": 25.0
+                }
+              ],
+              "tonnage": 1200.0,
+              "kpsh": 48.0,
+              "funtikov": 182.4,
+              "timeMinutes": 3.0,
+              "avgWeight": 25.0,
+              "relativeIntensity": 0.404413
+            },
+            {
+              "entryId": "entry-w4-d3-e6",
+              "groups": [
+                {
+                  "weight": 15.0
+                },
+                {
+                  "weight": 18.0
+                }
+              ],
+              "tonnage": 1080.0,
+              "kpsh": 32.0,
+              "funtikov": 250.56,
+              "timeMinutes": 3.9,
+              "avgWeight": 33.75,
+              "relativeIntensity": 0.545957
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-5",
+      "tonnage": 35711.1,
+      "kpsh": 720.0,
+      "funtikov": 17337.2626,
+      "timeMinutes": 248.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 12800.5,
+          "kpsh": 255.0,
+          "funtikov": 6973.217,
+          "timeMinutes": 88.0,
+          "entries": [
+            {
+              "entryId": "entry-w5-d1-e1",
+              "groups": [
+                {
+                  "weight": 40.0
+                },
+                {
+                  "weight": 47.5
+                },
+                {
+                  "weight": 55.0
+                }
+              ],
+              "tonnage": 2292.5,
+              "kpsh": 47.0,
+              "funtikov": 1275.025,
+              "timeMinutes": 13.2,
+              "avgWeight": 48.776596,
+              "relativeIntensity": 0.520815
+            },
+            {
+              "entryId": "entry-w5-d1-e2",
+              "groups": [
+                {
+                  "weight": 15.0
+                }
+              ],
+              "tonnage": 1200.0,
+              "kpsh": 40.0,
+              "funtikov": 136.8,
+              "timeMinutes": 3.0,
+              "avgWeight": 30.0,
+              "relativeIntensity": 0.411849
+            },
+            {
+              "entryId": "entry-w5-d1-e3",
+              "groups": [
+                {
+                  "weight": 8.0
+                }
+              ],
+              "tonnage": 768.0,
+              "kpsh": 48.0,
+              "funtikov": 64.512,
+              "timeMinutes": 3.0,
+              "avgWeight": 16.0,
+              "relativeIntensity": 0.349447
+            },
+            {
+              "entryId": "entry-w5-d1-e4",
+              "groups": [
+                {
+                  "weight": 92.5
+                },
+                {
+                  "weight": 112.5
+                }
+              ],
+              "tonnage": 3360.0,
+              "kpsh": 32.0,
+              "funtikov": 2556.0,
+              "timeMinutes": 15.6,
+              "avgWeight": 105.0,
+              "relativeIntensity": 0.560572
+            },
+            {
+              "entryId": "entry-w5-d1-e5",
+              "groups": [
+                {
+                  "weight": 67.5
+                },
+                {
+                  "weight": 90.0
+                }
+              ],
+              "tonnage": 3780.0,
+              "kpsh": 48.0,
+              "funtikov": 2728.08,
+              "timeMinutes": 20.4,
+              "avgWeight": 78.75,
+              "relativeIntensity": 0.521912
+            },
+            {
+              "entryId": "entry-w5-d1-e6",
+              "groups": [
+                {
+                  "weight": 7.0
+                }
+              ],
+              "tonnage": 1400.0,
+              "kpsh": 40.0,
+              "funtikov": 212.8,
+              "timeMinutes": 3.0,
+              "avgWeight": 35.0,
+              "relativeIntensity": 0.420429
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 10052.6,
+          "kpsh": 266.0,
+          "funtikov": 3311.7996,
+          "timeMinutes": 79.0,
+          "entries": [
+            {
+              "entryId": "entry-w5-d2-e1",
+              "groups": [
+                {
+                  "weight": 72.5
+                }
+              ],
+              "tonnage": 3480.0,
+              "kpsh": 48.0,
+              "funtikov": 1740.0,
+              "timeMinutes": 19.2,
+              "avgWeight": 72.5,
+              "relativeIntensity": 0.497651
+            },
+            {
+              "entryId": "entry-w5-d2-e2",
+              "groups": [
+                {
+                  "weight": 52.5
+                }
+              ],
+              "tonnage": 2520.0,
+              "kpsh": 48.0,
+              "funtikov": 957.6,
+              "timeMinutes": 12.0,
+              "avgWeight": 52.5,
+              "relativeIntensity": 0.403612
+            },
+            {
+              "entryId": "entry-w5-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.7
+                },
+                {
+                  "weight": 5.2
+                }
+              ],
+              "tonnage": 1057.6,
+              "kpsh": 52.0,
+              "funtikov": 156.6096,
+              "timeMinutes": 6.0,
+              "avgWeight": 20.338462,
+              "relativeIntensity": 0.488622
+            },
+            {
+              "entryId": "entry-w5-d2-e4",
+              "groups": [
+                {
+                  "weight": 22.5
+                }
+              ],
+              "tonnage": 675.0,
+              "kpsh": 30.0,
+              "funtikov": 76.95,
+              "timeMinutes": 2.25,
+              "avgWeight": 22.5,
+              "relativeIntensity": 0.393128
+            },
+            {
+              "entryId": "entry-w5-d2-e5",
+              "groups": [
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 960.0,
+              "kpsh": 48.0,
+              "funtikov": 144.0,
+              "timeMinutes": 4.8,
+              "avgWeight": 20.0,
+              "relativeIntensity": 0.48049
+            },
+            {
+              "entryId": "entry-w5-d2-e6",
+              "groups": [
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 1360.0,
+              "kpsh": 40.0,
+              "funtikov": 236.64,
+              "timeMinutes": 5.4,
+              "avgWeight": 34.0,
+              "relativeIntensity": 0.544556
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 12858.0,
+          "kpsh": 199.0,
+          "funtikov": 7052.246,
+          "timeMinutes": 81.0,
+          "entries": [
+            {
+              "entryId": "entry-w5-d3-e1",
+              "groups": [
+                {
+                  "weight": 115.0
+                },
+                {
+                  "weight": 130.0
+                },
+                {
+                  "weight": 150.0
+                }
+              ],
+              "tonnage": 3650.0,
+              "kpsh": 28.0,
+              "funtikov": 3694.6,
+              "timeMinutes": 16.8,
+              "avgWeight": 130.357143,
+              "relativeIntensity": 0.626353
+            },
+            {
+              "entryId": "entry-w5-d3-e2",
+              "groups": [
+                {
+                  "weight": 70.0
+                },
+                {
+                  "weight": 85.0
+                }
+              ],
+              "tonnage": 2540.0,
+              "kpsh": 32.0,
+              "funtikov": 1720.2,
+              "timeMinutes": 15.6,
+              "avgWeight": 79.375,
+              "relativeIntensity": 0.586752
+            },
+            {
+              "entryId": "entry-w5-d3-e3",
+              "groups": [
+                {
+                  "weight": 30.0
+                },
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 1845.0,
+              "kpsh": 27.0,
+              "funtikov": 418.05,
+              "timeMinutes": 3.9,
+              "avgWeight": 68.333333,
+              "relativeIntensity": 0.46905
+            },
+            {
+              "entryId": "entry-w5-d3-e4",
+              "groups": [
+                {
+                  "weight": 14.0
+                },
+                {
+                  "weight": 16.0
+                },
+                {
+                  "weight": 18.0
+                }
+              ],
+              "tonnage": 2360.0,
+              "kpsh": 30.0,
+              "funtikov": 708.48,
+              "timeMinutes": 4.2,
+              "avgWeight": 78.666667,
+              "relativeIntensity": 0.604777
+            },
+            {
+              "entryId": "entry-w5-d3-e5",
+              "groups": [
+                {
+                  "weight": 27.5
+                }
+              ],
+              "tonnage": 1375.0,
+              "kpsh": 50.0,
+              "funtikov": 258.5,
+              "timeMinutes": 6.0,
+              "avgWeight": 27.5,
+              "relativeIntensity": 0.440449
+            },
+            {
+              "entryId": "entry-w5-d3-e6",
+              "groups": [
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 1088.0,
+              "kpsh": 32.0,
+              "funtikov": 252.416,
+              "timeMinutes": 5.4,
+              "avgWeight": 34.0,
+              "relativeIntensity": 0.544556
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-6",
+      "tonnage": 40236.6,
+      "kpsh": 744.0,
+      "funtikov": 19494.2576,
+      "timeMinutes": 264.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 13235.0,
+          "kpsh": 239.0,
+          "funtikov": 8108.7,
+          "timeMinutes": 96.0,
+          "entries": [
+            {
+              "entryId": "entry-w6-d1-e1",
+              "groups": [
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 1350.0,
+              "kpsh": 36.0,
+              "funtikov": 513.0,
+              "timeMinutes": 9.0,
+              "avgWeight": 37.5,
+              "relativeIntensity": 0.396444
+            },
+            {
+              "entryId": "entry-w6-d1-e2",
+              "groups": [
+                {
+                  "weight": 18.0
+                },
+                {
+                  "weight": 23.0
+                }
+              ],
+              "tonnage": 1460.0,
+              "kpsh": 35.0,
+              "funtikov": 288.0,
+              "timeMinutes": 2.55,
+              "avgWeight": 41.714286,
+              "relativeIntensity": 0.566996
+            },
+            {
+              "entryId": "entry-w6-d1-e3",
+              "groups": [
+                {
+                  "weight": 9.0
+                }
+              ],
+              "tonnage": 720.0,
+              "kpsh": 40.0,
+              "funtikov": 82.08,
+              "timeMinutes": 3.0,
+              "avgWeight": 18.0,
+              "relativeIntensity": 0.389236
+            },
+            {
+              "entryId": "entry-w6-d1-e4",
+              "groups": [
+                {
+                  "weight": 105.0
+                },
+                {
+                  "weight": 120.0
+                }
+              ],
+              "tonnage": 4890.0,
+              "kpsh": 42.0,
+              "funtikov": 4325.04,
+              "timeMinutes": 27.0,
+              "avgWeight": 116.428571,
+              "relativeIntensity": 0.615432
+            },
+            {
+              "entryId": "entry-w6-d1-e5",
+              "groups": [
+                {
+                  "weight": 75.0
+                },
+                {
+                  "weight": 87.5
+                },
+                {
+                  "weight": 100.0
+                }
+              ],
+              "tonnage": 3375.0,
+              "kpsh": 38.0,
+              "funtikov": 2796.9,
+              "timeMinutes": 22.2,
+              "avgWeight": 88.815789,
+              "relativeIntensity": 0.582794
+            },
+            {
+              "entryId": "entry-w6-d1-e6",
+              "groups": [
+                {
+                  "weight": 6.0
+                }
+              ],
+              "tonnage": 1440.0,
+              "kpsh": 48.0,
+              "funtikov": 103.68,
+              "timeMinutes": 3.0,
+              "avgWeight": 30.0,
+              "relativeIntensity": 0.3568
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 10879.6,
+          "kpsh": 259.0,
+          "funtikov": 4506.5976,
+          "timeMinutes": 81.0,
+          "entries": [
+            {
+              "entryId": "entry-w6-d2-e1",
+              "groups": [
+                {
+                  "weight": 80.0
+                },
+                {
+                  "weight": 90.0
+                },
+                {
+                  "weight": 102.5
+                }
+              ],
+              "tonnage": 4360.0,
+              "kpsh": 47.0,
+              "funtikov": 3387.3,
+              "timeMinutes": 16.8,
+              "avgWeight": 92.765957,
+              "relativeIntensity": 0.630454
+            },
+            {
+              "entryId": "entry-w6-d2-e2",
+              "groups": [
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 2550.0,
+              "kpsh": 60.0,
+              "funtikov": 459.0,
+              "timeMinutes": 15.0,
+              "avgWeight": 42.5,
+              "relativeIntensity": 0.323498
+            },
+            {
+              "entryId": "entry-w6-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.7
+                },
+                {
+                  "weight": 6.0
+                }
+              ],
+              "tonnage": 1185.6,
+              "kpsh": 52.0,
+              "funtikov": 210.3696,
+              "timeMinutes": 6.6,
+              "avgWeight": 22.8,
+              "relativeIntensity": 0.542335
+            },
+            {
+              "entryId": "entry-w6-d2-e4",
+              "groups": [
+                {
+                  "weight": 25.0
+                }
+              ],
+              "tonnage": 600.0,
+              "kpsh": 24.0,
+              "funtikov": 84.6,
+              "timeMinutes": 3.6,
+              "avgWeight": 25.0,
+              "relativeIntensity": 0.432484
+            },
+            {
+              "entryId": "entry-w6-d2-e5",
+              "groups": [
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 960.0,
+              "kpsh": 40.0,
+              "funtikov": 167.04,
+              "timeMinutes": 5.4,
+              "avgWeight": 24.0,
+              "relativeIntensity": 0.570879
+            },
+            {
+              "entryId": "entry-w6-d2-e6",
+              "groups": [
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 1224.0,
+              "kpsh": 36.0,
+              "funtikov": 198.288,
+              "timeMinutes": 3.6,
+              "avgWeight": 34.0,
+              "relativeIntensity": 0.539164
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 16122.0,
+          "kpsh": 246.0,
+          "funtikov": 6878.96,
+          "timeMinutes": 87.0,
+          "entries": [
+            {
+              "entryId": "entry-w6-d3-e1",
+              "groups": [
+                {
+                  "weight": 95.0
+                },
+                {
+                  "weight": 125.0
+                }
+              ],
+              "tonnage": 4890.0,
+              "kpsh": 42.0,
+              "funtikov": 4011.54,
+              "timeMinutes": 21.0,
+              "avgWeight": 116.428571,
+              "relativeIntensity": 0.553889
+            },
+            {
+              "entryId": "entry-w6-d3-e2",
+              "groups": [
+                {
+                  "weight": 47.5
+                }
+              ],
+              "tonnage": 1710.0,
+              "kpsh": 36.0,
+              "funtikov": 478.8,
+              "timeMinutes": 9.0,
+              "avgWeight": 47.5,
+              "relativeIntensity": 0.347651
+            },
+            {
+              "entryId": "entry-w6-d3-e3",
+              "groups": [
+                {
+                  "weight": 32.5
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 3970.0,
+              "kpsh": 58.0,
+              "funtikov": 996.7,
+              "timeMinutes": 12.3,
+              "avgWeight": 68.448276,
+              "relativeIntensity": 0.465187
+            },
+            {
+              "entryId": "entry-w6-d3-e4",
+              "groups": [
+                {
+                  "weight": 13.0
+                },
+                {
+                  "weight": 16.0
+                }
+              ],
+              "tonnage": 3180.0,
+              "kpsh": 42.0,
+              "funtikov": 828.0,
+              "timeMinutes": 5.25,
+              "avgWeight": 75.714286,
+              "relativeIntensity": 0.576316
+            },
+            {
+              "entryId": "entry-w6-d3-e5",
+              "groups": [
+                {
+                  "weight": 30.0
+                },
+                {
+                  "weight": 35.0
+                }
+              ],
+              "tonnage": 1140.0,
+              "kpsh": 34.0,
+              "funtikov": 244.56,
+              "timeMinutes": 4.8,
+              "avgWeight": 33.529412,
+              "relativeIntensity": 0.531701
+            },
+            {
+              "entryId": "entry-w6-d3-e6",
+              "groups": [
+                {
+                  "weight": 16.0
+                },
+                {
+                  "weight": 19.0
+                }
+              ],
+              "tonnage": 1232.0,
+              "kpsh": 34.0,
+              "funtikov": 319.36,
+              "timeMinutes": 5.25,
+              "avgWeight": 36.235294,
+              "relativeIntensity": 0.574611
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-7",
+      "tonnage": 44452.6,
+      "kpsh": 776.0,
+      "funtikov": 26098.1824,
+      "timeMinutes": 319.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 15945.0,
+          "kpsh": 266.0,
+          "funtikov": 9631.16,
+          "timeMinutes": 122.0,
+          "entries": [
+            {
+              "entryId": "entry-w7-d1-e1",
+              "groups": [
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 1700.0,
+              "kpsh": 40.0,
+              "funtikov": 799.0,
+              "timeMinutes": 19.2,
+              "avgWeight": 42.5,
+              "relativeIntensity": 0.444855
+            },
+            {
+              "entryId": "entry-w7-d1-e2",
+              "groups": [
+                {
+                  "weight": 20.0
+                }
+              ],
+              "tonnage": 1600.0,
+              "kpsh": 40.0,
+              "funtikov": 278.4,
+              "timeMinutes": 5.4,
+              "avgWeight": 40.0,
+              "relativeIntensity": 0.538312
+            },
+            {
+              "entryId": "entry-w7-d1-e3",
+              "groups": [
+                {
+                  "weight": 11.0
+                }
+              ],
+              "tonnage": 880.0,
+              "kpsh": 40.0,
+              "funtikov": 124.08,
+              "timeMinutes": 4.8,
+              "avgWeight": 22.0,
+              "relativeIntensity": 0.471023
+            },
+            {
+              "entryId": "entry-w7-d1-e4",
+              "groups": [
+                {
+                  "weight": 85.0
+                },
+                {
+                  "weight": 102.5
+                },
+                {
+                  "weight": 127.5
+                }
+              ],
+              "tonnage": 6125.0,
+              "kpsh": 54.0,
+              "funtikov": 5376.72,
+              "timeMinutes": 33.6,
+              "avgWeight": 113.425926,
+              "relativeIntensity": 0.593624
+            },
+            {
+              "entryId": "entry-w7-d1-e5",
+              "groups": [
+                {
+                  "weight": 70.0
+                },
+                {
+                  "weight": 85.0
+                }
+              ],
+              "tonnage": 4240.0,
+              "kpsh": 52.0,
+              "funtikov": 2840.16,
+              "timeMinutes": 26.4,
+              "avgWeight": 81.538462,
+              "relativeIntensity": 0.529744
+            },
+            {
+              "entryId": "entry-w7-d1-e6",
+              "groups": [
+                {
+                  "weight": 7.0
+                }
+              ],
+              "tonnage": 1400.0,
+              "kpsh": 40.0,
+              "funtikov": 212.8,
+              "timeMinutes": 3.0,
+              "avgWeight": 35.0,
+              "relativeIntensity": 0.412145
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 9867.6,
+          "kpsh": 234.0,
+          "funtikov": 4125.3624,
+          "timeMinutes": 98.0,
+          "entries": [
+            {
+              "entryId": "entry-w7-d2-e1",
+              "groups": [
+                {
+                  "weight": 67.5
+                },
+                {
+                  "weight": 82.5
+                }
+              ],
+              "tonnage": 3990.0,
+              "kpsh": 52.0,
+              "funtikov": 2218.5,
+              "timeMinutes": 31.2,
+              "avgWeight": 76.730769,
+              "relativeIntensity": 0.516313
+            },
+            {
+              "entryId": "entry-w7-d2-e2",
+              "groups": [
+                {
+                  "weight": 60.0
+                },
+                {
+                  "weight": 72.5
+                }
+              ],
+              "tonnage": 2940.0,
+              "kpsh": 44.0,
+              "funtikov": 1538.4,
+              "timeMinutes": 24.0,
+              "avgWeight": 66.818182,
+              "relativeIntensity": 0.503566
+            },
+            {
+              "entryId": "entry-w7-d2-e3",
+              "groups": [
+                {
+                  "weight": 3.9
+                }
+              ],
+              "tonnage": 561.6,
+              "kpsh": 36.0,
+              "funtikov": 47.1744,
+              "timeMinutes": 2.25,
+              "avgWeight": 15.6,
+              "relativeIntensity": 0.367398
+            },
+            {
+              "entryId": "entry-w7-d2-e4",
+              "groups": [
+                {
+                  "weight": 20.0
+                }
+              ],
+              "tonnage": 720.0,
+              "kpsh": 36.0,
+              "funtikov": 60.48,
+              "timeMinutes": 2.25,
+              "avgWeight": 20.0,
+              "relativeIntensity": 0.342562
+            },
+            {
+              "entryId": "entry-w7-d2-e5",
+              "groups": [
+                {
+                  "weight": 10.0
+                },
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 792.0,
+              "kpsh": 38.0,
+              "funtikov": 118.008,
+              "timeMinutes": 4.95,
+              "avgWeight": 20.842105,
+              "relativeIntensity": 0.490855
+            },
+            {
+              "entryId": "entry-w7-d2-e6",
+              "groups": [
+                {
+                  "weight": 14.0
+                },
+                {
+                  "weight": 19.0
+                }
+              ],
+              "tonnage": 864.0,
+              "kpsh": 28.0,
+              "funtikov": 142.8,
+              "timeMinutes": 3.75,
+              "avgWeight": 30.857143,
+              "relativeIntensity": 0.48448
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 18640.0,
+          "kpsh": 276.0,
+          "funtikov": 12341.66,
+          "timeMinutes": 99.0,
+          "entries": [
+            {
+              "entryId": "entry-w7-d3-e1",
+              "groups": [
+                {
+                  "weight": 117.5
+                },
+                {
+                  "weight": 137.5
+                },
+                {
+                  "weight": 162.5
+                }
+              ],
+              "tonnage": 6685.0,
+              "kpsh": 46.0,
+              "funtikov": 9286.94,
+              "timeMinutes": 31.2,
+              "avgWeight": 145.326087,
+              "relativeIntensity": 0.684519
+            },
+            {
+              "entryId": "entry-w7-d3-e2",
+              "groups": [
+                {
+                  "weight": 55.0
+                }
+              ],
+              "tonnage": 2200.0,
+              "kpsh": 40.0,
+              "funtikov": 836.0,
+              "timeMinutes": 12.0,
+              "avgWeight": 55.0,
+              "relativeIntensity": 0.398558
+            },
+            {
+              "entryId": "entry-w7-d3-e3",
+              "groups": [
+                {
+                  "weight": 30.0
+                },
+                {
+                  "weight": 37.5
+                },
+                {
+                  "weight": 45.0
+                }
+              ],
+              "tonnage": 3660.0,
+              "kpsh": 48.0,
+              "funtikov": 1015.8,
+              "timeMinutes": 11.7,
+              "avgWeight": 76.25,
+              "relativeIntensity": 0.513078
+            },
+            {
+              "entryId": "entry-w7-d3-e4",
+              "groups": [
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 3600.0,
+              "kpsh": 60.0,
+              "funtikov": 676.8,
+              "timeMinutes": 6.0,
+              "avgWeight": 60.0,
+              "relativeIntensity": 0.452182
+            },
+            {
+              "entryId": "entry-w7-d3-e5",
+              "groups": [
+                {
+                  "weight": 27.5
+                },
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 1455.0,
+              "kpsh": 42.0,
+              "funtikov": 368.04,
+              "timeMinutes": 5.25,
+              "avgWeight": 34.642857,
+              "relativeIntensity": 0.543919
+            },
+            {
+              "entryId": "entry-w7-d3-e6",
+              "groups": [
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 1040.0,
+              "kpsh": 40.0,
+              "funtikov": 158.08,
+              "timeMinutes": 3.0,
+              "avgWeight": 26.0,
+              "relativeIntensity": 0.40822
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-8",
+      "tonnage": 43660.5,
+      "kpsh": 823.0,
+      "funtikov": 19352.113,
+      "timeMinutes": 298.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 16117.0,
+          "kpsh": 304.0,
+          "funtikov": 7316.888,
+          "timeMinutes": 107.0,
+          "entries": [
+            {
+              "entryId": "entry-w8-d1-e1",
+              "groups": [
+                {
+                  "weight": 42.5
+                },
+                {
+                  "weight": 50.0
+                }
+              ],
+              "tonnage": 2510.0,
+              "kpsh": 52.0,
+              "funtikov": 1253.8,
+              "timeMinutes": 22.2,
+              "avgWeight": 48.269231,
+              "relativeIntensity": 0.50024
+            },
+            {
+              "entryId": "entry-w8-d1-e2",
+              "groups": [
+                {
+                  "weight": 16.0
+                },
+                {
+                  "weight": 21.0
+                }
+              ],
+              "tonnage": 1644.0,
+              "kpsh": 42.0,
+              "funtikov": 263.016,
+              "timeMinutes": 4.8,
+              "avgWeight": 39.142857,
+              "relativeIntensity": 0.521561
+            },
+            {
+              "entryId": "entry-w8-d1-e3",
+              "groups": [
+                {
+                  "weight": 9.0
+                },
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 1368.0,
+              "kpsh": 60.0,
+              "funtikov": 207.792,
+              "timeMinutes": 5.55,
+              "avgWeight": 22.8,
+              "relativeIntensity": 0.483318
+            },
+            {
+              "entryId": "entry-w8-d1-e4",
+              "groups": [
+                {
+                  "weight": 97.5
+                },
+                {
+                  "weight": 112.5
+                }
+              ],
+              "tonnage": 5475.0,
+              "kpsh": 50.0,
+              "funtikov": 4095.0,
+              "timeMinutes": 26.4,
+              "avgWeight": 109.5,
+              "relativeIntensity": 0.567403
+            },
+            {
+              "entryId": "entry-w8-d1-e5",
+              "groups": [
+                {
+                  "weight": 55.0
+                }
+              ],
+              "tonnage": 2640.0,
+              "kpsh": 48.0,
+              "funtikov": 887.04,
+              "timeMinutes": 12.0,
+              "avgWeight": 55.0,
+              "relativeIntensity": 0.35379
+            },
+            {
+              "entryId": "entry-w8-d1-e6",
+              "groups": [
+                {
+                  "weight": 8.0
+                },
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 2480.0,
+              "kpsh": 52.0,
+              "funtikov": 610.24,
+              "timeMinutes": 6.6,
+              "avgWeight": 47.692308,
+              "relativeIntensity": 0.556043
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 13249.0,
+          "kpsh": 270.0,
+          "funtikov": 7154.994,
+          "timeMinutes": 108.0,
+          "entries": [
+            {
+              "entryId": "entry-w8-d2-e1",
+              "groups": [
+                {
+                  "weight": 60.0
+                },
+                {
+                  "weight": 75.0
+                }
+              ],
+              "tonnage": 4470.0,
+              "kpsh": 62.0,
+              "funtikov": 2148.6,
+              "timeMinutes": 27.0,
+              "avgWeight": 72.096774,
+              "relativeIntensity": 0.480328
+            },
+            {
+              "entryId": "entry-w8-d2-e2",
+              "groups": [
+                {
+                  "weight": 67.5
+                },
+                {
+                  "weight": 82.5
+                },
+                {
+                  "weight": 97.5
+                }
+              ],
+              "tonnage": 4755.0,
+              "kpsh": 54.0,
+              "funtikov": 4345.65,
+              "timeMinutes": 34.2,
+              "avgWeight": 88.055556,
+              "relativeIntensity": 0.657048
+            },
+            {
+              "entryId": "entry-w8-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.5
+                }
+              ],
+              "tonnage": 540.0,
+              "kpsh": 30.0,
+              "funtikov": 61.56,
+              "timeMinutes": 2.25,
+              "avgWeight": 18.0,
+              "relativeIntensity": 0.419723
+            },
+            {
+              "entryId": "entry-w8-d2-e4",
+              "groups": [
+                {
+                  "weight": 22.5
+                }
+              ],
+              "tonnage": 900.0,
+              "kpsh": 40.0,
+              "funtikov": 102.6,
+              "timeMinutes": 3.0,
+              "avgWeight": 22.5,
+              "relativeIntensity": 0.381566
+            },
+            {
+              "entryId": "entry-w8-d2-e5",
+              "groups": [
+                {
+                  "weight": 11.0
+                },
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 984.0,
+              "kpsh": 42.0,
+              "funtikov": 171.144,
+              "timeMinutes": 5.25,
+              "avgWeight": 23.428571,
+              "relativeIntensity": 0.546306
+            },
+            {
+              "entryId": "entry-w8-d2-e6",
+              "groups": [
+                {
+                  "weight": 16.0
+                },
+                {
+                  "weight": 20.0
+                }
+              ],
+              "tonnage": 1600.0,
+              "kpsh": 42.0,
+              "funtikov": 325.44,
+              "timeMinutes": 6.6,
+              "avgWeight": 38.095238,
+              "relativeIntensity": 0.592202
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 14294.5,
+          "kpsh": 249.0,
+          "funtikov": 4880.231,
+          "timeMinutes": 83.0,
+          "entries": [
+            {
+              "entryId": "entry-w8-d3-e1",
+              "groups": [
+                {
+                  "weight": 97.5
+                },
+                {
+                  "weight": 117.5
+                }
+              ],
+              "tonnage": 2932.5,
+              "kpsh": 27.0,
+              "funtikov": 2043.795,
+              "timeMinutes": 10.2,
+              "avgWeight": 108.611111,
+              "relativeIntensity": 0.506518
+            },
+            {
+              "entryId": "entry-w8-d3-e2",
+              "groups": [
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 2040.0,
+              "kpsh": 48.0,
+              "funtikov": 367.2,
+              "timeMinutes": 12.0,
+              "avgWeight": 42.5,
+              "relativeIntensity": 0.304927
+            },
+            {
+              "entryId": "entry-w8-d3-e3",
+              "groups": [
+                {
+                  "weight": 35.0
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 3420.0,
+              "kpsh": 42.0,
+              "funtikov": 1048.5,
+              "timeMinutes": 13.2,
+              "avgWeight": 81.428571,
+              "relativeIntensity": 0.542499
+            },
+            {
+              "entryId": "entry-w8-d3-e4",
+              "groups": [
+                {
+                  "weight": 13.0
+                },
+                {
+                  "weight": 16.0
+                }
+              ],
+              "tonnage": 2700.0,
+              "kpsh": 36.0,
+              "funtikov": 684.24,
+              "timeMinutes": 5.25,
+              "avgWeight": 75.0,
+              "relativeIntensity": 0.559631
+            },
+            {
+              "entryId": "entry-w8-d3-e5",
+              "groups": [
+                {
+                  "weight": 32.5
+                },
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 1850.0,
+              "kpsh": 52.0,
+              "funtikov": 466.0,
+              "timeMinutes": 7.8,
+              "avgWeight": 35.576923,
+              "relativeIntensity": 0.553054
+            },
+            {
+              "entryId": "entry-w8-d3-e6",
+              "groups": [
+                {
+                  "weight": 14.0
+                },
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 1352.0,
+              "kpsh": 44.0,
+              "funtikov": 270.496,
+              "timeMinutes": 4.8,
+              "avgWeight": 30.727273,
+              "relativeIntensity": 0.477665
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-9",
+      "tonnage": 50267.8,
+      "kpsh": 881.0,
+      "funtikov": 24379.6942,
+      "timeMinutes": 318.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 16475.0,
+          "kpsh": 282.0,
+          "funtikov": 9458.218,
+          "timeMinutes": 122.0,
+          "entries": [
+            {
+              "entryId": "entry-w9-d1-e1",
+              "groups": [
+                {
+                  "weight": 47.5
+                },
+                {
+                  "weight": 57.5
+                },
+                {
+                  "weight": 62.5
+                }
+              ],
+              "tonnage": 2645.0,
+              "kpsh": 46.0,
+              "funtikov": 1828.75,
+              "timeMinutes": 26.4,
+              "avgWeight": 57.5,
+              "relativeIntensity": 0.590003
+            },
+            {
+              "entryId": "entry-w9-d1-e2",
+              "groups": [
+                {
+                  "weight": 15.0
+                }
+              ],
+              "tonnage": 1440.0,
+              "kpsh": 48.0,
+              "funtikov": 120.96,
+              "timeMinutes": 3.0,
+              "avgWeight": 30.0,
+              "relativeIntensity": 0.395779
+            },
+            {
+              "entryId": "entry-w9-d1-e3",
+              "groups": [
+                {
+                  "weight": 11.0
+                },
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 1200.0,
+              "kpsh": 48.0,
+              "funtikov": 200.088,
+              "timeMinutes": 5.25,
+              "avgWeight": 25.0,
+              "relativeIntensity": 0.524706
+            },
+            {
+              "entryId": "entry-w9-d1-e4",
+              "groups": [
+                {
+                  "weight": 107.5
+                },
+                {
+                  "weight": 127.5
+                }
+              ],
+              "tonnage": 5155.0,
+              "kpsh": 42.0,
+              "funtikov": 4665.0,
+              "timeMinutes": 29.4,
+              "avgWeight": 122.738095,
+              "relativeIntensity": 0.629703
+            },
+            {
+              "entryId": "entry-w9-d1-e5",
+              "groups": [
+                {
+                  "weight": 77.5
+                }
+              ],
+              "tonnage": 3875.0,
+              "kpsh": 50.0,
+              "funtikov": 2185.5,
+              "timeMinutes": 24.0,
+              "avgWeight": 77.5,
+              "relativeIntensity": 0.493586
+            },
+            {
+              "entryId": "entry-w9-d1-e6",
+              "groups": [
+                {
+                  "weight": 9.0
+                }
+              ],
+              "tonnage": 2160.0,
+              "kpsh": 48.0,
+              "funtikov": 457.92,
+              "timeMinutes": 4.8,
+              "avgWeight": 45.0,
+              "relativeIntensity": 0.519459
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 13431.8,
+          "kpsh": 290.0,
+          "funtikov": 6657.8792,
+          "timeMinutes": 102.0,
+          "entries": [
+            {
+              "entryId": "entry-w9-d2-e1",
+              "groups": [
+                {
+                  "weight": 67.5
+                },
+                {
+                  "weight": 82.5
+                },
+                {
+                  "weight": 95.0
+                },
+                {
+                  "weight": 105.0
+                }
+              ],
+              "tonnage": 5105.0,
+              "kpsh": 56.0,
+              "funtikov": 3820.7,
+              "timeMinutes": 33.6,
+              "avgWeight": 91.160714,
+              "relativeIntensity": 0.601324
+            },
+            {
+              "entryId": "entry-w9-d2-e2",
+              "groups": [
+                {
+                  "weight": 60.0
+                },
+                {
+                  "weight": 72.5
+                }
+              ],
+              "tonnage": 4200.0,
+              "kpsh": 60.0,
+              "funtikov": 2287.2,
+              "timeMinutes": 24.0,
+              "avgWeight": 70.0,
+              "relativeIntensity": 0.517151
+            },
+            {
+              "entryId": "entry-w9-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.2
+                }
+              ],
+              "tonnage": 604.8,
+              "kpsh": 36.0,
+              "funtikov": 50.8032,
+              "timeMinutes": 2.25,
+              "avgWeight": 16.8,
+              "relativeIntensity": 0.387863
+            },
+            {
+              "entryId": "entry-w9-d2-e4",
+              "groups": [
+                {
+                  "weight": 22.5
+                }
+              ],
+              "tonnage": 810.0,
+              "kpsh": 36.0,
+              "funtikov": 68.04,
+              "timeMinutes": 2.25,
+              "avgWeight": 22.5,
+              "relativeIntensity": 0.377789
+            },
+            {
+              "entryId": "entry-w9-d2-e5",
+              "groups": [
+                {
+                  "weight": 10.0
+                },
+                {
+                  "weight": 11.0
+                }
+              ],
+              "tonnage": 1296.0,
+              "kpsh": 60.0,
+              "funtikov": 204.912,
+              "timeMinutes": 6.0,
+              "avgWeight": 21.6,
+              "relativeIntensity": 0.498681
+            },
+            {
+              "entryId": "entry-w9-d2-e6",
+              "groups": [
+                {
+                  "weight": 14.0
+                },
+                {
+                  "weight": 18.0
+                }
+              ],
+              "tonnage": 1416.0,
+              "kpsh": 42.0,
+              "funtikov": 226.224,
+              "timeMinutes": 4.8,
+              "avgWeight": 33.714286,
+              "relativeIntensity": 0.51891
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 20361.0,
+          "kpsh": 309.0,
+          "funtikov": 8263.597,
+          "timeMinutes": 94.0,
+          "entries": [
+            {
+              "entryId": "entry-w9-d3-e1",
+              "groups": [
+                {
+                  "weight": 87.5
+                },
+                {
+                  "weight": 112.5
+                }
+              ],
+              "tonnage": 6675.0,
+              "kpsh": 62.0,
+              "funtikov": 4394.325,
+              "timeMinutes": 27.0,
+              "avgWeight": 107.66129,
+              "relativeIntensity": 0.497117
+            },
+            {
+              "entryId": "entry-w9-d3-e2",
+              "groups": [
+                {
+                  "weight": 57.5
+                }
+              ],
+              "tonnage": 3450.0,
+              "kpsh": 60.0,
+              "funtikov": 1311.0,
+              "timeMinutes": 15.0,
+              "avgWeight": 57.5,
+              "relativeIntensity": 0.408464
+            },
+            {
+              "entryId": "entry-w9-d3-e3",
+              "groups": [
+                {
+                  "weight": 30.0
+                }
+              ],
+              "tonnage": 2400.0,
+              "kpsh": 40.0,
+              "funtikov": 456.0,
+              "timeMinutes": 6.0,
+              "avgWeight": 60.0,
+              "relativeIntensity": 0.395779
+            },
+            {
+              "entryId": "entry-w9-d3-e4",
+              "groups": [
+                {
+                  "weight": 14.0
+                },
+                {
+                  "weight": 16.0
+                },
+                {
+                  "weight": 19.0
+                }
+              ],
+              "tonnage": 4780.0,
+              "kpsh": 59.0,
+              "funtikov": 1356.0,
+              "timeMinutes": 5.25,
+              "avgWeight": 81.016949,
+              "relativeIntensity": 0.598542
+            },
+            {
+              "entryId": "entry-w9-d3-e5",
+              "groups": [
+                {
+                  "weight": 35.0
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 2120.0,
+              "kpsh": 52.0,
+              "funtikov": 641.44,
+              "timeMinutes": 8.85,
+              "avgWeight": 40.769231,
+              "relativeIntensity": 0.627495
+            },
+            {
+              "entryId": "entry-w9-d3-e6",
+              "groups": [
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 936.0,
+              "kpsh": 36.0,
+              "funtikov": 104.832,
+              "timeMinutes": 2.25,
+              "avgWeight": 26.0,
+              "relativeIntensity": 0.400176
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-10",
+      "tonnage": 51401.6,
+      "kpsh": 831.0,
+      "funtikov": 29000.4724,
+      "timeMinutes": 333.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 17760.0,
+          "kpsh": 276.0,
+          "funtikov": 12220.264,
+          "timeMinutes": 129.0,
+          "entries": [
+            {
+              "entryId": "entry-w10-d1-e1",
+              "groups": [
+                {
+                  "weight": 55.0
+                },
+                {
+                  "weight": 60.0
+                },
+                {
+                  "weight": 70.0
+                }
+              ],
+              "tonnage": 2830.0,
+              "kpsh": 44.0,
+              "funtikov": 2269.0,
+              "timeMinutes": 28.8,
+              "avgWeight": 64.318182,
+              "relativeIntensity": 0.65343
+            },
+            {
+              "entryId": "entry-w10-d1-e2",
+              "groups": [
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 1632.0,
+              "kpsh": 48.0,
+              "funtikov": 230.112,
+              "timeMinutes": 4.8,
+              "avgWeight": 34.0,
+              "relativeIntensity": 0.444108
+            },
+            {
+              "entryId": "entry-w10-d1-e3",
+              "groups": [
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 1248.0,
+              "kpsh": 48.0,
+              "funtikov": 198.432,
+              "timeMinutes": 4.8,
+              "avgWeight": 26.0,
+              "relativeIntensity": 0.540292
+            },
+            {
+              "entryId": "entry-w10-d1-e4",
+              "groups": [
+                {
+                  "weight": 112.5
+                },
+                {
+                  "weight": 135.0
+                }
+              ],
+              "tonnage": 5445.0,
+              "kpsh": 42.0,
+              "funtikov": 5347.08,
+              "timeMinutes": 29.4,
+              "avgWeight": 129.642857,
+              "relativeIntensity": 0.658542
+            },
+            {
+              "entryId": "entry-w10-d1-e5",
+              "groups": [
+                {
+                  "weight": 62.5
+                },
+                {
+                  "weight": 87.5
+                },
+                {
+                  "weight": 107.5
+                }
+              ],
+              "tonnage": 4205.0,
+              "kpsh": 46.0,
+              "funtikov": 3551.64,
+              "timeMinutes": 26.4,
+              "avgWeight": 91.413043,
+              "relativeIntensity": 0.576432
+            },
+            {
+              "entryId": "entry-w10-d1-e6",
+              "groups": [
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 2400.0,
+              "kpsh": 48.0,
+              "funtikov": 624.0,
+              "timeMinutes": 5.4,
+              "avgWeight": 50.0,
+              "relativeIntensity": 0.571462
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 15051.6,
+          "kpsh": 289.0,
+          "funtikov": 7862.4184,
+          "timeMinutes": 104.0,
+          "entries": [
+            {
+              "entryId": "entry-w10-d2-e1",
+              "groups": [
+                {
+                  "weight": 77.5
+                },
+                {
+                  "weight": 90.0
+                },
+                {
+                  "weight": 97.5
+                }
+              ],
+              "tonnage": 6090.0,
+              "kpsh": 71.0,
+              "funtikov": 3735.0,
+              "timeMinutes": 25.2,
+              "avgWeight": 85.774648,
+              "relativeIntensity": 0.560194
+            },
+            {
+              "entryId": "entry-w10-d2-e2",
+              "groups": [
+                {
+                  "weight": 67.5
+                },
+                {
+                  "weight": 85.0
+                },
+                {
+                  "weight": 97.5
+                }
+              ],
+              "tonnage": 4000.0,
+              "kpsh": 46.0,
+              "funtikov": 3248.5,
+              "timeMinutes": 28.2,
+              "avgWeight": 86.956522,
+              "relativeIntensity": 0.636062
+            },
+            {
+              "entryId": "entry-w10-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.6
+                }
+              ],
+              "tonnage": 441.6,
+              "kpsh": 24.0,
+              "funtikov": 50.3424,
+              "timeMinutes": 1.5,
+              "avgWeight": 18.4,
+              "relativeIntensity": 0.420596
+            },
+            {
+              "entryId": "entry-w10-d2-e4",
+              "groups": [
+                {
+                  "weight": 25.0
+                },
+                {
+                  "weight": 32.5
+                }
+              ],
+              "tonnage": 1600.0,
+              "kpsh": 52.0,
+              "funtikov": 240.9,
+              "timeMinutes": 5.55,
+              "avgWeight": 30.769231,
+              "relativeIntensity": 0.511519
+            },
+            {
+              "entryId": "entry-w10-d2-e5",
+              "groups": [
+                {
+                  "weight": 11.0
+                },
+                {
+                  "weight": 13.0
+                },
+                {
+                  "weight": 14.0
+                }
+              ],
+              "tonnage": 1420.0,
+              "kpsh": 54.0,
+              "funtikov": 314.616,
+              "timeMinutes": 8.55,
+              "avgWeight": 26.296296,
+              "relativeIntensity": 0.601094
+            },
+            {
+              "entryId": "entry-w10-d2-e6",
+              "groups": [
+                {
+                  "weight": 15.0
+                },
+                {
+                  "weight": 19.0
+                }
+              ],
+              "tonnage": 1500.0,
+              "kpsh": 42.0,
+              "funtikov": 273.06,
+              "timeMinutes": 5.25,
+              "avgWeight": 35.714286,
+              "relativeIntensity": 0.54425
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 18590.0,
+          "kpsh": 266.0,
+          "funtikov": 8917.79,
+          "timeMinutes": 100.0,
+          "entries": [
+            {
+              "entryId": "entry-w10-d3-e1",
+              "groups": [
+                {
+                  "weight": 97.5
+                },
+                {
+                  "weight": 120.0
+                },
+                {
+                  "weight": 137.5
+                }
+              ],
+              "tonnage": 6770.0,
+              "kpsh": 54.0,
+              "funtikov": 5909.67,
+              "timeMinutes": 31.8,
+              "avgWeight": 125.37037,
+              "relativeIntensity": 0.573156
+            },
+            {
+              "entryId": "entry-w10-d3-e2",
+              "groups": [
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 2550.0,
+              "kpsh": 60.0,
+              "funtikov": 459.0,
+              "timeMinutes": 15.0,
+              "avgWeight": 42.5,
+              "relativeIntensity": 0.298919
+            },
+            {
+              "entryId": "entry-w10-d3-e3",
+              "groups": [
+                {
+                  "weight": 35.0
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 3390.0,
+              "kpsh": 42.0,
+              "funtikov": 962.4,
+              "timeMinutes": 10.5,
+              "avgWeight": 80.714286,
+              "relativeIntensity": 0.527145
+            },
+            {
+              "entryId": "entry-w10-d3-e4",
+              "groups": [
+                {
+                  "weight": 14.0
+                },
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 3420.0,
+              "kpsh": 42.0,
+              "funtikov": 964.4,
+              "timeMinutes": 6.6,
+              "avgWeight": 81.428571,
+              "relativeIntensity": 0.595627
+            },
+            {
+              "entryId": "entry-w10-d3-e5",
+              "groups": [
+                {
+                  "weight": 35.0
+                },
+                {
+                  "weight": 40.0
+                }
+              ],
+              "tonnage": 1860.0,
+              "kpsh": 48.0,
+              "funtikov": 509.52,
+              "timeMinutes": 5.25,
+              "avgWeight": 38.75,
+              "relativeIntensity": 0.590511
+            },
+            {
+              "entryId": "entry-w10-d3-e6",
+              "groups": [
+                {
+                  "weight": 15.0
+                }
+              ],
+              "tonnage": 600.0,
+              "kpsh": 20.0,
+              "funtikov": 112.8,
+              "timeMinutes": 1.2,
+              "avgWeight": 30.0,
+              "relativeIntensity": 0.45717
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-11",
+      "tonnage": 45278.3,
+      "kpsh": 792.0,
+      "funtikov": 23063.5112,
+      "timeMinutes": 305.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 15458.0,
+          "kpsh": 260.0,
+          "funtikov": 9141.24,
+          "timeMinutes": 118.0,
+          "entries": [
+            {
+              "entryId": "entry-w11-d1-e1",
+              "groups": [
+                {
+                  "weight": 45.0
+                },
+                {
+                  "weight": 55.0
+                }
+              ],
+              "tonnage": 2730.0,
+              "kpsh": 54.0,
+              "funtikov": 1497.6,
+              "timeMinutes": 25.8,
+              "avgWeight": 50.555556,
+              "relativeIntensity": 0.508525
+            },
+            {
+              "entryId": "entry-w11-d1-e2",
+              "groups": [
+                {
+                  "weight": 19.0
+                }
+              ],
+              "tonnage": 1368.0,
+              "kpsh": 36.0,
+              "funtikov": 205.2,
+              "timeMinutes": 3.6,
+              "avgWeight": 38.0,
+              "relativeIntensity": 0.491441
+            },
+            {
+              "entryId": "entry-w11-d1-e3",
+              "groups": [
+                {
+                  "weight": 9.0
+                }
+              ],
+              "tonnage": 900.0,
+              "kpsh": 50.0,
+              "funtikov": 75.6,
+              "timeMinutes": 3.75,
+              "avgWeight": 18.0,
+              "relativeIntensity": 0.370345
+            },
+            {
+              "entryId": "entry-w11-d1-e4",
+              "groups": [
+                {
+                  "weight": 102.5
+                },
+                {
+                  "weight": 115.0
+                },
+                {
+                  "weight": 127.5
+                }
+              ],
+              "tonnage": 5440.0,
+              "kpsh": 46.0,
+              "funtikov": 4543.44,
+              "timeMinutes": 26.4,
+              "avgWeight": 118.26087,
+              "relativeIntensity": 0.594778
+            },
+            {
+              "entryId": "entry-w11-d1-e5",
+              "groups": [
+                {
+                  "weight": 72.5
+                },
+                {
+                  "weight": 92.5
+                }
+              ],
+              "tonnage": 3670.0,
+              "kpsh": 44.0,
+              "funtikov": 2549.4,
+              "timeMinutes": 25.8,
+              "avgWeight": 83.409091,
+              "relativeIntensity": 0.520753
+            },
+            {
+              "entryId": "entry-w11-d1-e6",
+              "groups": [
+                {
+                  "weight": 9.0
+                }
+              ],
+              "tonnage": 1350.0,
+              "kpsh": 30.0,
+              "funtikov": 270.0,
+              "timeMinutes": 3.6,
+              "avgWeight": 45.0,
+              "relativeIntensity": 0.509224
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 11785.8,
+          "kpsh": 258.0,
+          "funtikov": 5433.4072,
+          "timeMinutes": 94.0,
+          "entries": [
+            {
+              "entryId": "entry-w11-d2-e1",
+              "groups": [
+                {
+                  "weight": 70.0
+                },
+                {
+                  "weight": 85.0
+                },
+                {
+                  "weight": 95.0
+                }
+              ],
+              "tonnage": 4540.0,
+              "kpsh": 52.0,
+              "funtikov": 2968.3,
+              "timeMinutes": 26.4,
+              "avgWeight": 87.307692,
+              "relativeIntensity": 0.564561
+            },
+            {
+              "entryId": "entry-w11-d2-e2",
+              "groups": [
+                {
+                  "weight": 62.5
+                },
+                {
+                  "weight": 77.5
+                }
+              ],
+              "tonnage": 3075.0,
+              "kpsh": 42.0,
+              "funtikov": 1794.0,
+              "timeMinutes": 21.0,
+              "avgWeight": 73.214286,
+              "relativeIntensity": 0.53024
+            },
+            {
+              "entryId": "entry-w11-d2-e3",
+              "groups": [
+                {
+                  "weight": 3.9
+                }
+              ],
+              "tonnage": 748.8,
+              "kpsh": 48.0,
+              "funtikov": 62.8992,
+              "timeMinutes": 3.0,
+              "avgWeight": 15.6,
+              "relativeIntensity": 0.353062
+            },
+            {
+              "entryId": "entry-w11-d2-e4",
+              "groups": [
+                {
+                  "weight": 27.5
+                },
+                {
+                  "weight": 32.5
+                }
+              ],
+              "tonnage": 1310.0,
+              "kpsh": 44.0,
+              "funtikov": 206.16,
+              "timeMinutes": 5.1,
+              "avgWeight": 29.772727,
+              "relativeIntensity": 0.490052
+            },
+            {
+              "entryId": "entry-w11-d2-e5",
+              "groups": [
+                {
+                  "weight": 12.0
+                }
+              ],
+              "tonnage": 1152.0,
+              "kpsh": 48.0,
+              "funtikov": 200.448,
+              "timeMinutes": 5.4,
+              "avgWeight": 24.0,
+              "relativeIntensity": 0.543172
+            },
+            {
+              "entryId": "entry-w11-d2-e6",
+              "groups": [
+                {
+                  "weight": 20.0
+                }
+              ],
+              "tonnage": 960.0,
+              "kpsh": 24.0,
+              "funtikov": 201.6,
+              "timeMinutes": 4.05,
+              "avgWeight": 40.0,
+              "relativeIntensity": 0.603525
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 18034.5,
+          "kpsh": 274.0,
+          "funtikov": 8488.864,
+          "timeMinutes": 93.0,
+          "entries": [
+            {
+              "entryId": "entry-w11-d3-e1",
+              "groups": [
+                {
+                  "weight": 105.0
+                },
+                {
+                  "weight": 125.0
+                },
+                {
+                  "weight": 147.5
+                }
+              ],
+              "tonnage": 6050.0,
+              "kpsh": 46.0,
+              "funtikov": 5643.04,
+              "timeMinutes": 28.2,
+              "avgWeight": 131.521739,
+              "relativeIntensity": 0.595325
+            },
+            {
+              "entryId": "entry-w11-d3-e2",
+              "groups": [
+                {
+                  "weight": 50.0
+                }
+              ],
+              "tonnage": 2400.0,
+              "kpsh": 48.0,
+              "funtikov": 672.0,
+              "timeMinutes": 12.0,
+              "avgWeight": 50.0,
+              "relativeIntensity": 0.348187
+            },
+            {
+              "entryId": "entry-w11-d3-e3",
+              "groups": [
+                {
+                  "weight": 30.0
+                },
+                {
+                  "weight": 37.5
+                }
+              ],
+              "tonnage": 2970.0,
+              "kpsh": 42.0,
+              "funtikov": 699.3,
+              "timeMinutes": 8.7,
+              "avgWeight": 70.714286,
+              "relativeIntensity": 0.457262
+            },
+            {
+              "entryId": "entry-w11-d3-e4",
+              "groups": [
+                {
+                  "weight": 12.0
+                },
+                {
+                  "weight": 14.0
+                },
+                {
+                  "weight": 15.0
+                }
+              ],
+              "tonnage": 3270.0,
+              "kpsh": 47.0,
+              "funtikov": 656.76,
+              "timeMinutes": 3.6,
+              "avgWeight": 69.574468,
+              "relativeIntensity": 0.503879
+            },
+            {
+              "entryId": "entry-w11-d3-e5",
+              "groups": [
+                {
+                  "weight": 32.5
+                },
+                {
+                  "weight": 37.5
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 2192.5,
+              "kpsh": 59.0,
+              "funtikov": 550.5,
+              "timeMinutes": 5.1,
+              "avgWeight": 37.161017,
+              "relativeIntensity": 0.56069
+            },
+            {
+              "entryId": "entry-w11-d3-e6",
+              "groups": [
+                {
+                  "weight": 18.0
+                }
+              ],
+              "tonnage": 1152.0,
+              "kpsh": 32.0,
+              "funtikov": 267.264,
+              "timeMinutes": 5.4,
+              "avgWeight": 36.0,
+              "relativeIntensity": 0.543172
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "weekId": "week-12",
+      "tonnage": 40690.0,
+      "kpsh": 748.0,
+      "funtikov": 20433.316,
+      "timeMinutes": 275.0,
+      "days": [
+        {
+          "dayTemplateId": "day-mon",
+          "tonnage": 13208.0,
+          "kpsh": 268.0,
+          "funtikov": 6137.672,
+          "timeMinutes": 93.0,
+          "entries": [
+            {
+              "entryId": "entry-w12-d1-e1",
+              "groups": [
+                {
+                  "weight": 40.0
+                },
+                {
+                  "weight": 47.5
+                }
+              ],
+              "tonnage": 2380.0,
+              "kpsh": 52.0,
+              "funtikov": 1075.4,
+              "timeMinutes": 22.2,
+              "avgWeight": 45.769231,
+              "relativeIntensity": 0.455823
+            },
+            {
+              "entryId": "entry-w12-d1-e2",
+              "groups": [
+                {
+                  "weight": 14.0
+                }
+              ],
+              "tonnage": 1008.0,
+              "kpsh": 36.0,
+              "funtikov": 84.672,
+              "timeMinutes": 2.25,
+              "avgWeight": 28.0,
+              "relativeIntensity": 0.358529
+            },
+            {
+              "entryId": "entry-w12-d1-e3",
+              "groups": [
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 1200.0,
+              "kpsh": 60.0,
+              "funtikov": 100.8,
+              "timeMinutes": 4.5,
+              "avgWeight": 20.0,
+              "relativeIntensity": 0.40742
+            },
+            {
+              "entryId": "entry-w12-d1-e4",
+              "groups": [
+                {
+                  "weight": 90.0
+                },
+                {
+                  "weight": 110.0
+                }
+              ],
+              "tonnage": 5480.0,
+              "kpsh": 52.0,
+              "funtikov": 3671.52,
+              "timeMinutes": 26.4,
+              "avgWeight": 105.384615,
+              "relativeIntensity": 0.524771
+            },
+            {
+              "entryId": "entry-w12-d1-e5",
+              "groups": [
+                {
+                  "weight": 85.0
+                }
+              ],
+              "tonnage": 1700.0,
+              "kpsh": 20.0,
+              "funtikov": 1101.6,
+              "timeMinutes": 4.8,
+              "avgWeight": 85.0,
+              "relativeIntensity": 0.525431
+            },
+            {
+              "entryId": "entry-w12-d1-e6",
+              "groups": [
+                {
+                  "weight": 6.0
+                }
+              ],
+              "tonnage": 1440.0,
+              "kpsh": 48.0,
+              "funtikov": 103.68,
+              "timeMinutes": 3.0,
+              "avgWeight": 30.0,
+              "relativeIntensity": 0.336121
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-wed",
+          "tonnage": 11297.0,
+          "kpsh": 244.0,
+          "funtikov": 5285.024,
+          "timeMinutes": 93.0,
+          "entries": [
+            {
+              "entryId": "entry-w12-d2-e1",
+              "groups": [
+                {
+                  "weight": 72.5
+                },
+                {
+                  "weight": 90.0
+                }
+              ],
+              "tonnage": 4470.0,
+              "kpsh": 52.0,
+              "funtikov": 2748.9,
+              "timeMinutes": 26.4,
+              "avgWeight": 85.961538,
+              "relativeIntensity": 0.550353
+            },
+            {
+              "entryId": "entry-w12-d2-e2",
+              "groups": [
+                {
+                  "weight": 70.0
+                },
+                {
+                  "weight": 82.5
+                }
+              ],
+              "tonnage": 3175.0,
+              "kpsh": 40.0,
+              "funtikov": 2033.0,
+              "timeMinutes": 21.0,
+              "avgWeight": 79.375,
+              "relativeIntensity": 0.569166
+            },
+            {
+              "entryId": "entry-w12-d2-e3",
+              "groups": [
+                {
+                  "weight": 4.4
+                }
+              ],
+              "tonnage": 1056.0,
+              "kpsh": 60.0,
+              "funtikov": 88.704,
+              "timeMinutes": 4.5,
+              "avgWeight": 17.6,
+              "relativeIntensity": 0.394382
+            },
+            {
+              "entryId": "entry-w12-d2-e4",
+              "groups": [
+                {
+                  "weight": 30.0
+                },
+                {
+                  "weight": 35.0
+                }
+              ],
+              "tonnage": 1060.0,
+              "kpsh": 32.0,
+              "funtikov": 190.5,
+              "timeMinutes": 3.9,
+              "avgWeight": 33.125,
+              "relativeIntensity": 0.539831
+            },
+            {
+              "entryId": "entry-w12-d2-e5",
+              "groups": [
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 720.0,
+              "kpsh": 36.0,
+              "funtikov": 101.52,
+              "timeMinutes": 3.6,
+              "avgWeight": 20.0,
+              "relativeIntensity": 0.448162
+            },
+            {
+              "entryId": "entry-w12-d2-e6",
+              "groups": [
+                {
+                  "weight": 17.0
+                }
+              ],
+              "tonnage": 816.0,
+              "kpsh": 24.0,
+              "funtikov": 122.4,
+              "timeMinutes": 3.6,
+              "avgWeight": 34.0,
+              "relativeIntensity": 0.507917
+            }
+          ]
+        },
+        {
+          "dayTemplateId": "day-fri",
+          "tonnage": 16185.0,
+          "kpsh": 236.0,
+          "funtikov": 9010.62,
+          "timeMinutes": 89.0,
+          "entries": [
+            {
+              "entryId": "entry-w12-d3-e1",
+              "groups": [
+                {
+                  "weight": 112.5
+                },
+                {
+                  "weight": 135.0
+                },
+                {
+                  "weight": 155.0
+                }
+              ],
+              "tonnage": 6420.0,
+              "kpsh": 46.0,
+              "funtikov": 6458.4,
+              "timeMinutes": 28.2,
+              "avgWeight": 139.565217,
+              "relativeIntensity": 0.625478
+            },
+            {
+              "entryId": "entry-w12-d3-e2",
+              "groups": [
+                {
+                  "weight": 57.5
+                }
+              ],
+              "tonnage": 2070.0,
+              "kpsh": 36.0,
+              "funtikov": 786.6,
+              "timeMinutes": 9.0,
+              "avgWeight": 57.5,
+              "relativeIntensity": 0.396451
+            },
+            {
+              "entryId": "entry-w12-d3-e3",
+              "groups": [
+                {
+                  "weight": 35.0
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 3390.0,
+              "kpsh": 42.0,
+              "funtikov": 936.9,
+              "timeMinutes": 10.5,
+              "avgWeight": 80.714286,
+              "relativeIntensity": 0.516758
+            },
+            {
+              "entryId": "entry-w12-d3-e4",
+              "groups": [
+                {
+                  "weight": 13.0
+                }
+              ],
+              "tonnage": 1950.0,
+              "kpsh": 30.0,
+              "funtikov": 366.6,
+              "timeMinutes": 3.6,
+              "avgWeight": 65.0,
+              "relativeIntensity": 0.466088
+            },
+            {
+              "entryId": "entry-w12-d3-e5",
+              "groups": [
+                {
+                  "weight": 37.5
+                },
+                {
+                  "weight": 42.5
+                }
+              ],
+              "tonnage": 1395.0,
+              "kpsh": 34.0,
+              "funtikov": 393.0,
+              "timeMinutes": 5.4,
+              "avgWeight": 41.029412,
+              "relativeIntensity": 0.612927
+            },
+            {
+              "entryId": "entry-w12-d3-e6",
+              "groups": [
+                {
+                  "weight": 10.0
+                }
+              ],
+              "tonnage": 960.0,
+              "kpsh": 48.0,
+              "funtikov": 69.12,
+              "timeMinutes": 3.0,
+              "avgWeight": 20.0,
+              "relativeIntensity": 0.298775
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
