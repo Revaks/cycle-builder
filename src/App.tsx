@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AppShell, type PageId } from './components/AppShell';
+import ExercisesPage from './pages/ExercisesPage';
 import OverviewPage from './pages/OverviewPage';
 
 function Placeholder({ title, text }: { title: string; text: string }) {
@@ -39,12 +40,7 @@ export default function App() {
           }
         />
       )}
-      {page === 'exercises' && (
-        <Placeholder
-          title="Упражнения"
-          text="Справочник упражнений, 1ПМ, коэффициенты D/E и округление."
-        />
-      )}
+      {page === 'exercises' && <ExercisesPage />}
       {page === 'settings' && (
         <Placeholder
           title="Настройки"
