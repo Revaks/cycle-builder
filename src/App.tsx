@@ -1,19 +1,10 @@
 import { useState } from 'react';
 import { AppShell, type PageId } from './components/AppShell';
 import ExercisesPage from './pages/ExercisesPage';
+import ExportPage from './pages/ExportPage';
 import OverviewPage from './pages/OverviewPage';
 import ProgramPage from './pages/ProgramPage';
 import SettingsPage from './pages/SettingsPage';
-
-function Placeholder({ title, text }: { title: string; text: string }) {
-  return (
-    <section className="page-heading">
-      <p className="eyebrow">Раздел</p>
-      <h2>{title}</h2>
-      <p className="muted">{text}</p>
-    </section>
-  );
-}
 
 export default function App() {
   const [page, setPage] = useState<PageId>('overview');
@@ -35,12 +26,7 @@ export default function App() {
       {page === 'program' && <ProgramPage initialWeekId={selectedWeekId} />}
       {page === 'exercises' && <ExercisesPage />}
       {page === 'settings' && <SettingsPage />}
-      {page === 'export' && (
-        <Placeholder
-          title="Экспорт"
-          text="Печать, PDF и выгрузка Excel появятся на следующих шагах."
-        />
-      )}
+      {page === 'export' && <ExportPage />}
     </AppShell>
   );
 }
