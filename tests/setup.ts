@@ -1,3 +1,5 @@
+import '@testing-library/jest-dom/vitest';
+
 class MemoryStorage implements Storage {
   private data = new Map<string, string>();
 

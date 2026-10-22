@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { AppShell, type PageId } from './components/AppShell';
 import ExercisesPage from './pages/ExercisesPage';
 import OverviewPage from './pages/OverviewPage';
+import ProgramPage from './pages/ProgramPage';
 
 function Placeholder({ title, text }: { title: string; text: string }) {
   return (
@@ -30,16 +31,7 @@ export default function App() {
       onExcel={() => setPage('export')}
     >
       {page === 'overview' && <OverviewPage onOpenWeek={openWeek} />}
-      {page === 'program' && (
-        <Placeholder
-          title="Программа"
-          text={
-            selectedWeekId
-              ? `Выбрана неделя ${selectedWeekId}. Редактор появится на следующем шаге.`
-              : 'Редактор недель и групп подходов появится на следующем шаге.'
-          }
-        />
-      )}
+      {page === 'program' && <ProgramPage initialWeekId={selectedWeekId} />}
       {page === 'exercises' && <ExercisesPage />}
       {page === 'settings' && (
         <Placeholder

@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 interface NumberInputProps {
   label: string;
   value: number | null;
@@ -19,18 +21,25 @@ export default function NumberInput({
   suffix,
   disabled,
 }: NumberInputProps) {
+  const [draft, setDraft] = useState(value === null ? '' : String(value));
+
+  useEffect(() => {
+    setDraft(value === null ? '' : String(value));
+  }, [value]);
+
   return (
     <span className="number-field">
       <input
         type="number"
         aria-label={label}
-        value={value === null || Number.isNaN(value) ? '' : value}
+        value={draft}
         min={min}
         max={max}
         step={step}
         disabled={disabled}
         onChange={(event) => {
           const raw = event.target.value;
+          setDraft(raw);
           if (raw === '') {
             onChange(null);
             return;
