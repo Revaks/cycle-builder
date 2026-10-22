@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { FileDown, Printer } from 'lucide-react';
 import PrintView from '../components/PrintView';
-import { downloadExcel, type ExportScope } from '../export/excel';
+import type { ExportScope } from '../export/excel';
 import { useComputedCycle } from '../selectors/useComputedCycle';
 import { useProjectStore } from '../store/projectStore';
 import { formatKg, formatMinutes } from '../utils/format';
@@ -70,6 +70,7 @@ export default function ExportPage() {
     setExporting(true);
     setError(null);
     try {
+      const { downloadExcel } = await import('../export/excel');
       await downloadExcel(project, cycle, scope);
     } catch (cause) {
       setError(cause instanceof Error ? cause.message : 'Не удалось сформировать Excel');
