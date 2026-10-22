@@ -1,5 +1,6 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { FileDown, Printer } from 'lucide-react';
+import PrintView from '../components/PrintView';
 import { downloadExcel, type ExportScope } from '../export/excel';
 import { useComputedCycle } from '../selectors/useComputedCycle';
 import { useProjectStore } from '../store/projectStore';
@@ -15,6 +16,17 @@ export default function ExportPage() {
   const [dayTemplateId, setDayTemplateId] = useState(cycle.weeks[0]?.days[0]?.dayTemplateId ?? '');
   const [exporting, setExporting] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [printPending, setPrintPending] = useState(false);
+
+  useEffect(() => {
+    if (!printPending) return;
+    const timer = window.setTimeout(() => {
+      window.print();
+      setPrintPending(false);
+    }, 80);
+    return () => window.clearTimeout(timer);
+  }, [printPending]);
 
   const errors = issues.filter((issue) => issue.severity === 'error');
   const warnings = issues.filter((issue) => issue.severity === 'warning');
@@ -64,6 +76,12 @@ export default function ExportPage() {
     } finally {
       setExporting(false);
     }
+  };
+
+  const handlePrint = () => {
+    if (errors.length > 0) return;
+    setPreviewOpen(true);
+    setPrintPending(true);
   };
 
   return (
@@ -175,16 +193,40 @@ export default function ExportPage() {
           <button
             type="button"
             className="button button-ghost"
-            onClick={() => window.print()}
+            onClick={handlePrint}
             disabled={errors.length > 0}
           >
             <Printer size={17} />
             Печать / PDF
           </button>
+          <button
+            type="button"
+            className="button button-ghost"
+            onClick={() => setPreviewOpen((open) => !open)}
+            disabled={errors.length > 0}
+          >
+            {previewOpen ? 'Скрыть предпросмотр' : 'Предпросмотр'}
+          </button>
         </div>
 
         {error && <p className="import-error">{error}</p>}
       </section>
+
+      {previewOpen && (
+        <section className="print-preview-shell">
+          <div className="print-preview-head">
+            <h3>Предпросмотр печати</h3>
+            <button
+              type="button"
+              className="text-button"
+              onClick={() => setPreviewOpen(false)}
+            >
+              Скрыть
+            </button>
+          </div>
+          <PrintView project={project} cycle={cycle} scope={scope} />
+        </section>
+      )}
 
       <section className="card export-hint">
         <h3>Что внутри Excel</h3>
