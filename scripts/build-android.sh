@@ -11,13 +11,13 @@ cd "$(dirname "$0")/../android"
 
 mkdir -p release
 cp app/build/outputs/apk/debug/app-debug.apk \
-  release/cycle-builder-android-0.1.0-debug.apk
+  release/cycle-builder-android-0.2.0-debug.apk
 
 if [ -f keystore.properties ]; then
   ./gradlew :app:assembleRelease
   cp app/build/outputs/apk/release/app-release.apk \
-    release/cycle-builder-android-0.1.0.apk
-  echo "Подписанный release APK: android/release/cycle-builder-android-0.1.0.apk"
+    release/cycle-builder-android-0.2.0.apk
+  echo "Подписанный release APK: android/release/cycle-builder-android-0.2.0.apk"
 else
   echo "keystore.properties не найден: собран только debug APK."
 fi

@@ -67,7 +67,7 @@ npm install
 Готовый подписанный APK:
 
 ```text
-android/release/cycle-builder-android-0.1.0.apk
+android/release/cycle-builder-android-0.2.0.apk
 ```
 
 Сборка:
