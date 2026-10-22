@@ -1,3 +1,62 @@
+import { useState } from 'react';
+import { AppShell, type PageId } from './components/AppShell';
+import OverviewPage from './pages/OverviewPage';
+
+function Placeholder({ title, text }: { title: string; text: string }) {
+  return (
+    <section className="page-heading">
+      <p className="eyebrow">Раздел</p>
+      <h2>{title}</h2>
+      <p className="muted">{text}</p>
+    </section>
+  );
+}
+
 export default function App() {
-  return <main className="app">Конструктор цикла</main>;
+  const [page, setPage] = useState<PageId>('overview');
+  const [selectedWeekId, setSelectedWeekId] = useState<string | undefined>();
+
+  const openWeek = (weekId: string) => {
+    setSelectedWeekId(weekId);
+    setPage('program');
+  };
+
+  return (
+    <AppShell
+      page={page}
+      onNavigate={setPage}
+      onPrint={() => setPage('export')}
+      onExcel={() => setPage('export')}
+    >
+      {page === 'overview' && <OverviewPage onOpenWeek={openWeek} />}
+      {page === 'program' && (
+        <Placeholder
+          title="Программа"
+          text={
+            selectedWeekId
+              ? `Выбрана неделя ${selectedWeekId}. Редактор появится на следующем шаге.`
+              : 'Редактор недель и групп подходов появится на следующем шаге.'
+          }
+        />
+      )}
+      {page === 'exercises' && (
+        <Placeholder
+          title="Упражнения"
+          text="Справочник упражнений, 1ПМ, коэффициенты D/E и округление."
+        />
+      )}
+      {page === 'settings' && (
+        <Placeholder
+          title="Настройки"
+          text="Прогрессия, разгрузки, коэффициенты метрик и резервная копия."
+        />
+      )}
+      {page === 'export' && (
+        <Placeholder
+          title="Экспорт"
+          text="Печать, PDF и выгрузка Excel появятся на следующих шагах."
+        />
+      )}
+    </AppShell>
+  );
 }
