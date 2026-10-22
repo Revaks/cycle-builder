@@ -3,6 +3,7 @@ import { AppShell, type PageId } from './components/AppShell';
 import ExercisesPage from './pages/ExercisesPage';
 import OverviewPage from './pages/OverviewPage';
 import ProgramPage from './pages/ProgramPage';
+import SettingsPage from './pages/SettingsPage';
 
 function Placeholder({ title, text }: { title: string; text: string }) {
   return (
@@ -33,12 +34,7 @@ export default function App() {
       {page === 'overview' && <OverviewPage onOpenWeek={openWeek} />}
       {page === 'program' && <ProgramPage initialWeekId={selectedWeekId} />}
       {page === 'exercises' && <ExercisesPage />}
-      {page === 'settings' && (
-        <Placeholder
-          title="Настройки"
-          text="Прогрессия, разгрузки, коэффициенты метрик и резервная копия."
-        />
-      )}
+      {page === 'settings' && <SettingsPage />}
       {page === 'export' && (
         <Placeholder
           title="Экспорт"

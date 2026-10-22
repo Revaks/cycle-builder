@@ -6,6 +6,9 @@ import {
   applyWave,
   duplicateWeek,
   removeExercise,
+  setDefaultRounding,
+  setMetrics,
+  setProgression,
   updateGroup,
   waveTargetPercent,
 } from '../../src/store/projectActions';
@@ -79,5 +82,22 @@ describe('projectActions', () => {
     expect([0, 1, 2].map((index) => waveTargetPercent('linear', 50, 5, index))).toEqual([
       50, 55, 60,
     ]);
+  });
+
+  it('обновляет настройки прогрессии, округления и метрик', () => {
+    const project = createSeedProject();
+    const progressed = setProgression(project, {
+      mode: 'linear',
+      stepPercent: 2,
+      deload: { mode: 'reduce', reductionPercent: 15 },
+    });
+    expect(progressed.progression.stepPercent).toBe(2);
+
+    const rounded = setDefaultRounding(progressed, 0.5);
+    expect(rounded.defaultRounding).toBe(0.5);
+
+    const metrics = { ...rounded.metrics, timeFallbackFactor: 1.3 };
+    const withMetrics = setMetrics(rounded, metrics);
+    expect(withMetrics.metrics.timeFallbackFactor).toBe(1.3);
   });
 });

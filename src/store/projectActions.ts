@@ -2,7 +2,9 @@ import { newId } from '../domain/ids';
 import type {
   Entry,
   Exercise,
+  MetricsConfig,
   Project,
+  ProgressionConfig,
   RoundingMode,
   SetGroup,
   Week,
@@ -43,6 +45,18 @@ function clampPercent(value: number): number {
 
 export function renameProject(project: Project, name: string): Project {
   return touch({ ...project, name });
+}
+
+export function setProgression(project: Project, progression: ProgressionConfig): Project {
+  return touch({ ...project, progression });
+}
+
+export function setDefaultRounding(project: Project, rounding: RoundingMode): Project {
+  return touch({ ...project, defaultRounding: rounding });
+}
+
+export function setMetrics(project: Project, metrics: MetricsConfig): Project {
+  return touch({ ...project, metrics });
 }
 
 export function addExercise(project: Project, input: NewExerciseInput): Project {
